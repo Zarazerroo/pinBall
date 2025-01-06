@@ -1,59 +1,64 @@
-// All rights reserved 2025 Muhammad Alhasan. Unauthorized copying, distribution, or modification is prohibited.
-
+// All rights reserved © 2025 Muhammad Alhasan. Unauthorized copying, distribution, or modification is prohibited.
 
 using UnityEngine;
 
-public class PinballFlicker : MonoBehaviour
+public class PinballFlicker2D : MonoBehaviour
 {
-    [Header("Flicker Settings")]
-    public float flickerAngle = 45f; 
-    public float flickSpeed = 10f; 
-    public KeyCode flickKey = KeyCode.Space; 
+   [Header("Flicker Settings")]
+   public float flickAngle = 45f; // Maximum rotation angle
+   public float flickSpeed = 10f; // Speed of rotation
+   public KeyCode flickKey = KeyCode.Space; // Key to trigger the flick
 
-    private Quaternion initialRotation; 
-    private Quaternion targetRotation; 
-    private bool isFlicking = false; 
+   private Rigidbody2D rb;
+   private float initialRotation; // Starting rotation angle
+   private float targetRotation; // Target rotation angle
+   private bool isFlicking = false;
 
-    private void Start()
-    {
-        initialRotation = transform.rotation;
-        targetRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 0, -flickerAngle));
-    }
+   private void Start()
+   {
+      rb = GetComponent<Rigidbody2D>();
+      if (rb == null)
+      {
+         Debug.LogError("Rigidbody2D component is missing! Please add a Rigidbody2D to this object.");
+      }
 
-    private void Update()
-    {
-        HandleFlicker();
-    }
+      initialRotation = rb.rotation;
+      targetRotation = initialRotation - flickAngle;
+   }
 
-    private void HandleFlicker()
-    {
-        if (Input.GetKeyDown(flickKey) && !isFlicking)
-        {
-            StartCoroutine(Flick());
-        }
-    }
+   private void Update()
+   {
+      HandleFlicker();
+   }
 
-    private System.Collections.IEnumerator Flick()
-    {
-        isFlicking = true;
+   private void HandleFlicker()
+   {
+      if (Input.GetKeyDown(flickKey) && !isFlicking)
+      {
+         StartCoroutine(Flick());
+      }
+   }
 
-        while (Quaternion.Angle(transform.rotation, targetRotation) > 0.1f)
-        {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, flickSpeed * Time.deltaTime * 100);
-            yield return null;
-        }
+   private System.Collections.IEnumerator Flick()
+   {
+      isFlicking = true;
 
-        while (Quaternion.Angle(transform.rotation, initialRotation) > 0.1f)
-        {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, initialRotation, flickSpeed * Time.deltaTime * 100);
-            yield return null;
-        }
+      // Rotate to the target angle
+      while (Mathf.Abs(rb.rotation - targetRotation) > 0.1f)
+      {
+         float newRotation = Mathf.MoveTowards(rb.rotation, targetRotation, flickSpeed * Time.deltaTime * 100);
+         rb.MoveRotation(newRotation);
+         yield return null;
+      }
 
-        isFlicking = false;
-    }
+      // Rotate back to the initial angle
+      while (Mathf.Abs(rb.rotation - initialRotation) > 0.1f)
+      {
+         float newRotation = Mathf.MoveTowards(rb.rotation, initialRotation, flickSpeed * Time.deltaTime * 100);
+         rb.MoveRotation(newRotation);
+         yield return null;
+      }
 
-
-
-
-
+      isFlicking = false;
+   }
 }
