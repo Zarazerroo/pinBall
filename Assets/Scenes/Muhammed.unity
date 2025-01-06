@@ -193,8 +193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flickAngle: 60
-  flickSpeed: 8
-  flickKey: 32
+  flickSpeed: 12
+  flickKey: 275
 --- !u!1 &471512359
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,8 +633,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flickAngle: -60
-  flickSpeed: 8
-  flickKey: 32
+  flickSpeed: 12
+  flickKey: 276
 --- !u!50 &1709139214
 Rigidbody2D:
   serializedVersion: 5
