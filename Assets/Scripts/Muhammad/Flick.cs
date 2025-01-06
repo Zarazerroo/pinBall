@@ -7,6 +7,7 @@ public class PinballFlicker2D : MonoBehaviour
    [Header("Flicker Settings")]
    public float flickAngle = 45f; // Maximum rotation angle
    public float flickSpeed = 10f; // Speed of rotation
+   public Vector2 center;
    public KeyCode flickKey = KeyCode.Space; // Key to trigger the flick
 
    private Rigidbody2D rb;
@@ -16,7 +17,11 @@ public class PinballFlicker2D : MonoBehaviour
 
    private void Start()
    {
+
+
+
       rb = GetComponent<Rigidbody2D>();
+
       if (rb == null)
       {
          Debug.LogError("Rigidbody2D component is missing! Please add a Rigidbody2D to this object.");
@@ -29,6 +34,8 @@ public class PinballFlicker2D : MonoBehaviour
    private void Update()
    {
       HandleFlicker();
+      rb.centerOfMass = center;
+
    }
 
    private void HandleFlicker()
