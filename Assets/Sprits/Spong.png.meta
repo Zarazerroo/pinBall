@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 33a3d05ae5f40f54dad4b864a28f9d44
+guid: 00918f9cd093f74439b6f1788f77790d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2024971411841788113
-    second: Happy Sponge_0
-  - first:
-      213: -5425016467182436340
-    second: Happy Sponge_1
-  - first:
-      213: 5025420495936933162
-    second: Happy Sponge_2
+      213: -2045847163000310124
+    second: Spong_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Happy Sponge_0
+      name: Spong_0
       rect:
         serializedVersion: 2
-        x: 621
-        y: 680
-        width: 1829
-        height: 1815
+        x: 119
+        y: 149
+        width: 2793
+        height: 2691
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2759dcca3bd5e3e0800000000000000
-      internalID: -2024971411841788113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Happy Sponge_1
-      rect:
-        serializedVersion: 2
-        x: 1312
-        y: 497
-        width: 36
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0042fc144876b4b0800000000000000
-      internalID: -5425016467182436340
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Happy Sponge_2
-      rect:
-        serializedVersion: 2
-        x: 1723
-        y: 496
-        width: 36
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2dc943b051edb540800000000000000
-      internalID: 5025420495936933162
+      spriteID: 49630a838d0bb93e0800000000000000
+      internalID: -2045847163000310124
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Happy Sponge_0: -2024971411841788113
-      Happy Sponge_1: -5425016467182436340
-      Happy Sponge_2: 5025420495936933162
+      Spong_0: -2045847163000310124
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
