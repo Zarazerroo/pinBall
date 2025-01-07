@@ -16,7 +16,15 @@ public class SpringActiveTrigger : MonoBehaviour
 
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+
+   private void OnTriggerEnter2D(Collider2D other)
+   {
+      other.GetComponent<Ball>().springActive = true;
+
+
+   }
+
+   private void OnTriggerExit2D(Collider2D other)
     {
         other.GetComponent<Ball>().springActive = false; 
 
