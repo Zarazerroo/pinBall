@@ -6,11 +6,13 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] private Text LivesText;
     [SerializeField] private GameObject ballPrefab;
+    private Vector3 ballRespawnPosition; 
 
     public int lives = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        ballRespawnPosition = new Vector3(-5.595f, 2.61f, 0f);
     }
 
     // Update is called once per frame
@@ -20,20 +22,16 @@ public class LevelController : MonoBehaviour
 
     public void RespawnBall()
     {
-        
-        Instantiate(ballPrefab, new Vector3(-5.595f, 4.191f, 0f), quaternion.identity);
-        
+        Instantiate(ballPrefab, ballRespawnPosition, quaternion.identity);
     }
 
     public void DestroyBall(GameObject ball)
     {
-        
         Destroy(ball);
         lives--;
         LivesText.text = lives.ToString();
         if(lives> 0 )
             RespawnBall();
-
     }
     
     

@@ -29,7 +29,6 @@ public class Ball : MonoBehaviour
         {
             if (springActive)
             {
-                springActive = false; 
                 KickBall();
                 counter = 0;
             }
