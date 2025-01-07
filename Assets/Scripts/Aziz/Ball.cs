@@ -1,5 +1,6 @@
 // Copyright Abdulaziz Alonizi 2025
 
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +17,6 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         //time.text = counter.ToString(); 
         if(Input.GetKey("s")){
             counter += Time.deltaTime;
@@ -31,7 +31,8 @@ public class Ball : MonoBehaviour
 
     private void KickBall()
     {
-        
-        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f,3*counter*100f));
+        counter = math.min(1.3f, counter);
+        //Debug.Log(counter.ToString());
+        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f,5*counter*100f));
     }
 }
