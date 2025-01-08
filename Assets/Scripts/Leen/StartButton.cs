@@ -5,7 +5,7 @@ public class StartButton : MonoBehaviour
 {
     public void StartTheGame() 
     { 
-        SceneManager.LoadScene("Leen"); 
+        SceneManager.LoadScene("Prototype"); 
     } 
 
     public void QuitGame()
