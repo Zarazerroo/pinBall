@@ -4,18 +4,7 @@ using UnityEngine;
 
 public class SpringActiveTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+   bool Exit = false;
 
    private void OnTriggerEnter2D(Collider2D other)
    {
@@ -23,6 +12,7 @@ public class SpringActiveTrigger : MonoBehaviour
       if (other.gameObject.CompareTag("Ball"))
       {
       other.GetComponent<Ball>().springActive = true;
+         Exit = false;
 
       }
 
@@ -30,12 +20,13 @@ public class SpringActiveTrigger : MonoBehaviour
    }
 
    private void OnTriggerExit2D(Collider2D other)
-    {
-      if (other.gameObject.CompareTag("Ball"))
+   {
+      if(!Exit)
       {
          other.GetComponent<Ball>().springActive = false;
-
+         Exit = true;
       }
+
 
    }
 }

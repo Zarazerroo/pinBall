@@ -184,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: {fileID: 0}
   springActive: 1
+  X: 2000
 --- !u!1 &5584329829094017118
 GameObject:
   m_ObjectHideFlags: 0
