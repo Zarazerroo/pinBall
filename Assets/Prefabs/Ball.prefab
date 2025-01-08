@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Mass: 0.1
   m_LinearDamping: 0.3
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 79f1016d9fbc41e45bd4cf2297bafd61, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2477092647362960978}
-  maxVelocity: 70
+  maxVelocity: 100
 --- !u!114 &5561613019665580778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: {fileID: 0}
   springActive: 1
-  X: 2000
+  X: 500
 --- !u!1 &5584329829094017118
 GameObject:
   m_ObjectHideFlags: 0
