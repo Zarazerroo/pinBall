@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 663ce4a2766d6d044b5ac66710185990
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5053805106091109292
+    second: toppng.com-coloring-book-numbers-1721x2197_0
+  - first:
+      213: 236302555900795214
+    second: toppng.com-coloring-book-numbers-1721x2197_1
+  - first:
+      213: -1226462269620384850
+    second: toppng.com-coloring-book-numbers-1721x2197_2
+  - first:
+      213: -3051216342149642581
+    second: toppng.com-coloring-book-numbers-1721x2197_3
+  - first:
+      213: -8670237989130262994
+    second: toppng.com-coloring-book-numbers-1721x2197_4
+  - first:
+      213: 7648922733864874459
+    second: toppng.com-coloring-book-numbers-1721x2197_5
+  - first:
+      213: 1549948234473384980
+    second: toppng.com-coloring-book-numbers-1721x2197_6
+  - first:
+      213: -5127061257664853062
+    second: toppng.com-coloring-book-numbers-1721x2197_7
+  - first:
+      213: 3064714218703594328
+    second: toppng.com-coloring-book-numbers-1721x2197_8
+  - first:
+      213: -875068592979435451
+    second: toppng.com-coloring-book-numbers-1721x2197_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 635
+        width: 170
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454526f38074dd9b0800000000000000
+      internalID: -5053805106091109292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 639
+        width: 111
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49dbff2ce3874300800000000000000
+      internalID: 236302555900795214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 639
+        width: 162
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab8bd8501bbafee0800000000000000
+      internalID: -1226462269620384850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_3
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 635
+        width: 166
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6cd4127e6e7a5d0800000000000000
+      internalID: -3051216342149642581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 321
+        width: 172
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e262bcb5c702da780800000000000000
+      internalID: -8670237989130262994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 317
+        width: 167
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1fc6263be662a60800000000000000
+      internalID: 7648922733864874459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_6
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 317
+        width: 162
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ca70015b5828510800000000000000
+      internalID: 1549948234473384980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 3
+        width: 171
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb083353f409d8b0800000000000000
+      internalID: -5127061257664853062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_8
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 167
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853aae7285d088a20800000000000000
+      internalID: 3064714218703594328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toppng.com-coloring-book-numbers-1721x2197_9
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 0
+        width: 162
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5402c5140c12bd3f0800000000000000
+      internalID: -875068592979435451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      toppng.com-coloring-book-numbers-1721x2197_0: -5053805106091109292
+      toppng.com-coloring-book-numbers-1721x2197_1: 236302555900795214
+      toppng.com-coloring-book-numbers-1721x2197_2: -1226462269620384850
+      toppng.com-coloring-book-numbers-1721x2197_3: -3051216342149642581
+      toppng.com-coloring-book-numbers-1721x2197_4: -8670237989130262994
+      toppng.com-coloring-book-numbers-1721x2197_5: 7648922733864874459
+      toppng.com-coloring-book-numbers-1721x2197_6: 1549948234473384980
+      toppng.com-coloring-book-numbers-1721x2197_7: -5127061257664853062
+      toppng.com-coloring-book-numbers-1721x2197_8: 3064714218703594328
+      toppng.com-coloring-book-numbers-1721x2197_9: -875068592979435451
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
