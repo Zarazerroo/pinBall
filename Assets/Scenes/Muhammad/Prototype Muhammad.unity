@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 64174743}
   - component: {fileID: 64174742}
   - component: {fileID: 64174741}
+  - component: {fileID: 64174744}
   m_Layer: 0
   m_Name: Curve (5)
   m_TagString: Untagged
@@ -708,6 +709,33 @@ SpriteShapeRenderer:
     m_Center: {x: -0.42393684, y: 4.517604, z: 0}
     m_Extent: {x: 8.280147, y: 5.767943, z: 0}
   m_SpriteSortPoint: 0
+--- !u!50 &64174744
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64174739}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 28e5fac929bfb084ea0578c2e531beee, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &114599048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,7 +3443,7 @@ Transform:
   m_GameObject: {fileID: 632648079}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -172.02, y: 31.54, z: 0}
+  m_LocalPosition: {x: -172.02, y: 36.02, z: 0}
   m_LocalScale: {x: 7.137095, y: 3.900052, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3433,7 +3461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6e79bfbee316d4f9d6d4e4d60ea391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedFactor: 5
+  speedFactor: 8
 --- !u!61 &632648082
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7458,6 +7486,7 @@ GameObject:
   - component: {fileID: 1670648262}
   - component: {fileID: 1670648261}
   - component: {fileID: 1670648260}
+  - component: {fileID: 1670648263}
   m_Layer: 0
   m_Name: Curve (4)
   m_TagString: Untagged
@@ -7780,6 +7809,33 @@ SpriteShapeRenderer:
     m_Center: {x: -0.42393684, y: 4.517604, z: 0}
     m_Extent: {x: 8.280147, y: 5.767943, z: 0}
   m_SpriteSortPoint: 0
+--- !u!50 &1670648263
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670648258}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 28e5fac929bfb084ea0578c2e531beee, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1670848165
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,7 +7939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1688534942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8559,6 +8615,7 @@ GameObject:
   - component: {fileID: 1776085548}
   - component: {fileID: 1776085547}
   - component: {fileID: 1776085550}
+  - component: {fileID: 1776085551}
   m_Layer: 0
   m_Name: Curve
   m_TagString: Untagged
@@ -8710,7 +8767,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -8881,6 +8938,33 @@ PolygonCollider2D:
       - {x: 1.0786612, y: -1.2373024}
       - {x: -1.000225, y: -1.25}
   m_UseDelaunayMesh: 0
+--- !u!50 &1776085551
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776085546}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 28e5fac929bfb084ea0578c2e531beee, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1790084353
 GameObject:
   m_ObjectHideFlags: 0
@@ -8893,6 +8977,7 @@ GameObject:
   - component: {fileID: 1790084356}
   - component: {fileID: 1790084355}
   - component: {fileID: 1790084354}
+  - component: {fileID: 1790084358}
   m_Layer: 0
   m_Name: Curve (1)
   m_TagString: Untagged
@@ -9215,6 +9300,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1185959984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 210.698}
+--- !u!50 &1790084358
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790084353}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 28e5fac929bfb084ea0578c2e531beee, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1832217259
 GameObject:
   m_ObjectHideFlags: 0
