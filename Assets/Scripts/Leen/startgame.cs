@@ -1,15 +1,14 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine.SceneManagement; 
 
-public class LevelLoader : MonoBehaviour
+public class startgame : MonoBehaviour
 {
     public Animator Transition;
     public float TransitionTime;
-    // Update is called once per frame
-    void Update()
-    {
-        //LoadNextScene();               
+    public void StartTheGame() 
+    { 
+        LoadNextScene();               
     }
 
     public void LoadNextScene()
@@ -26,5 +25,10 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(TransitionTime);
         //load scene
         SceneManager.LoadScene(LevelIndex);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
