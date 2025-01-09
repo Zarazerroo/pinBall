@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5561613019665580778}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2477092647362960978}
-  maxVelocity: 100
+  maxVelocity: 70
 --- !u!114 &5561613019665580778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: {fileID: 0}
   springActive: 1
-  X: 500
+  X: 2000
 --- !u!1 &5584329829094017118
 GameObject:
   m_ObjectHideFlags: 0

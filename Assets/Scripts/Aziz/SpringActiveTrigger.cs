@@ -5,13 +5,14 @@ using UnityEngine;
 public class SpringActiveTrigger : MonoBehaviour
 {
    bool Exit = false;
+   public Ball ball;
 
    private void OnTriggerEnter2D(Collider2D other)
    {
 
       if (other.gameObject.CompareTag("Ball"))
       {
-      other.GetComponent<Ball>().springActive = true;
+         ball.springActive = true;
          Exit = false;
 
       }
@@ -21,9 +22,9 @@ public class SpringActiveTrigger : MonoBehaviour
 
    private void OnTriggerExit2D(Collider2D other)
    {
-      if(!Exit)
+      if(!Exit )
       {
-         other.GetComponent<Ball>().springActive = false;
+         ball.springActive = false;
          Exit = true;
       }
 
