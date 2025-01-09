@@ -25,16 +25,17 @@ public class Spring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("s"))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             if (originalScale.y * 0.25 < transform.localScale.y)
             {
-                transform.localScale -= new Vector3(0f, springRate*shrinkAmount*Time.deltaTime, 0f);
-                transform.position -= new Vector3(0f, springRate*(shrinkAmount/2)*Time.deltaTime, 0f);
+                transform.ScaleYUpperEdge(-springRate*shrinkAmount);
+                // transform.localScale -= new Vector3(0f, springRate*shrinkAmount*Time.deltaTime, 0f);
+                // transform.position -= new Vector3(0f, springRate*(shrinkAmount/2)*Time.deltaTime, 0f);
             }
         }
 
-        if (Input.GetKeyUp("s"))
+        if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             transform.localPosition = originalPosition;
             transform.localScale = originalScale;

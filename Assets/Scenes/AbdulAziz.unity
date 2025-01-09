@@ -575,7 +575,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -1346,11 +1346,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1224680795152859031, guid: ce412f53f59c04399b65686471f514b5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.98
+      value: -11.94
       objectReference: {fileID: 0}
     - target: {fileID: 1224680795152859031, guid: ce412f53f59c04399b65686471f514b5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.67
+      value: 5.68
       objectReference: {fileID: 0}
     - target: {fileID: 1224680795152859031, guid: ce412f53f59c04399b65686471f514b5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1384,13 +1384,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5767327514537914500, guid: ce412f53f59c04399b65686471f514b5, type: 3}
-      propertyPath: time
-      value: 
-      objectReference: {fileID: 1485997324}
     - target: {fileID: 6331428820837411909, guid: ce412f53f59c04399b65686471f514b5, type: 3}
       propertyPath: m_Name
       value: Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288121122411668303, guid: ce412f53f59c04399b65686471f514b5, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

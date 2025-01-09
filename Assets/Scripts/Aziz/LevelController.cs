@@ -1,6 +1,8 @@
+using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class LevelController : MonoBehaviour
 {
@@ -24,16 +26,19 @@ public class LevelController : MonoBehaviour
         Instantiate(ballPrefab, ballRespawnPosition, quaternion.identity);
     }
 
-    public void spawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
+    public IEnumerator spawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
     {
-        Destroy(ball);
         for (int i = 0; i <= ballsCount; i++)
         { 
             var smallBall = Instantiate(ballPrefab, spawnLocation, quaternion.identity);
-            ball.transform.localScale *= .25f;
-            ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f,2f));
+            smallBall.layer = 4;
+            smallBall.transform.localScale *= .4f;
+            float random1 = Random.Range(-50f,50f);
+            float random2 = Random.Range(-50f,50f);
+            smallBall.GetComponent<Rigidbody2D>().AddForce(new Vector2(random1*5f,random2*5f));
+            yield return new WaitForSeconds(0.4f);
         }
-
+        Destroy(ball);
     }
 
     public void DestroyBall(GameObject ball)
@@ -44,6 +49,13 @@ public class LevelController : MonoBehaviour
         if(lives> 0 )
             RespawnBall();
     }
+
+    private IEnumerator Delay(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+    }
+    
+    
     
     
 }
