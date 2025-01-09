@@ -10,14 +10,16 @@ public class Spring : MonoBehaviour
 {
     private Vector3 originalScale;
     private Vector3 originalPosition;
-    private float shrinkAmount; 
+    private float shrinkAmount;
+    private float springRate; 
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         originalPosition = transform.localPosition;
         originalScale = transform.localScale;
-        shrinkAmount = 0.001f;
+        shrinkAmount = 0.01f;
+        springRate = 100f;
     }
 
     // Update is called once per frame
@@ -27,8 +29,8 @@ public class Spring : MonoBehaviour
         {
             if (originalScale.y * 0.25 < transform.localScale.y)
             {
-                transform.localScale -= new Vector3(0f, shrinkAmount, 0f);
-                transform.position -= new Vector3(0f, shrinkAmount/2, 0f);
+                transform.localScale -= new Vector3(0f, springRate*shrinkAmount*Time.deltaTime, 0f);
+                transform.position -= new Vector3(0f, springRate*(shrinkAmount/2)*Time.deltaTime, 0f);
             }
         }
 

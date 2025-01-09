@@ -24,6 +24,18 @@ public class LevelController : MonoBehaviour
         Instantiate(ballPrefab, ballRespawnPosition, quaternion.identity);
     }
 
+    public void spawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
+    {
+        Destroy(ball);
+        for (int i = 0; i <= ballsCount; i++)
+        { 
+            var smallBall = Instantiate(ballPrefab, spawnLocation, quaternion.identity);
+            ball.transform.localScale *= .25f;
+            ball.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f,2f));
+        }
+
+    }
+
     public void DestroyBall(GameObject ball)
     {
         Destroy(ball);
