@@ -20,9 +20,4 @@ public class HoneyTrap : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        // No specific action needed on exit in this case, but you can reset or log if needed
-        // Optionally restore speed if you save original velocity elsewhere
-    }
 }
