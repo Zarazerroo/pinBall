@@ -10,7 +10,8 @@ public class Ball : MonoBehaviour
     
     [SerializeField] private Text time;
     public bool springActive = true; 
-    private float counter = 0; 
+    private float counter = 0;
+   public int X = 500;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -39,7 +40,7 @@ public class Ball : MonoBehaviour
     {
         counter = math.min(1.3f, counter);
         //Debug.Log(counter.ToString());
-        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f,5*counter*100f));
+        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f,counter * X));
     }
     
     
