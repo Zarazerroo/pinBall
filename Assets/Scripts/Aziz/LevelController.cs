@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
@@ -12,10 +13,17 @@ public class LevelController : MonoBehaviour
     public Vector3 ballRespawnPosition; 
     //public int lives = 3;
     public ScoreKeeper score; 
-    public int ballsCount = 1 ; 
-    public void RespawnBall()
+    public int ballsCount = 1 ;
+
+    public void Start()
     {
         score = FindAnyObjectByType<ScoreKeeper>();
+
+    }
+
+    public void RespawnBall()
+    {
+       // score = FindAnyObjectByType<ScoreKeeper>();
         Instantiate(ballPrefab, ballRespawnPosition, quaternion.identity);
     }
     
@@ -26,7 +34,7 @@ public class LevelController : MonoBehaviour
         Destroy(ball);
         //lives--;
         //LivesText.text = lives.ToString();
-        if (ballsCount < 0)
+        if (ballsCount <= 0)
             score.ResetScore();
             
     }
