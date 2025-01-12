@@ -7,14 +7,14 @@ using UnityEngine.UI;
 
 public class Ball : MonoBehaviour
 {
-    
-    public bool springActive = true; 
+    private SpringActiveTrigger springActiveTrigger; 
+    //public bool springActive = true; 
     private float counter = 0;
-    public int X = 500;
+    public int X = 300;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        springActive = true; 
+        springActiveTrigger = FindAnyObjectByType<SpringActiveTrigger>();
     }
 
     // Update is called once per frame
@@ -26,10 +26,11 @@ public class Ball : MonoBehaviour
         
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            if (springActive)
+            if (springActiveTrigger.isActive)
             {
                 KickBall();
                 counter = 0;
+                springActiveTrigger.isActive = false; 
             }
         }
     }
