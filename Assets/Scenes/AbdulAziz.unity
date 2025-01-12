@@ -677,6 +677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94327004961d246f6bf898c60ba21b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballPrefab: {fileID: 6331428820837411909, guid: ce412f53f59c04399b65686471f514b5, type: 3}
 --- !u!1 &1386317649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,10 +1388,6 @@ PrefabInstance:
     - target: {fileID: 6331428820837411909, guid: ce412f53f59c04399b65686471f514b5, type: 3}
       propertyPath: m_Name
       value: Ball
-      objectReference: {fileID: 0}
-    - target: {fileID: 8288121122411668303, guid: ce412f53f59c04399b65686471f514b5, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
