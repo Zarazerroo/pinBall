@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ScoreKeeper : MonoBehaviour
 {   
     Text scoreText;
-    int score = 0;
+    public int score = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +21,12 @@ public class ScoreKeeper : MonoBehaviour
         score = score + points; 
         // update the score , int -> string
         scoreText.text = score.ToString(); 
-    } 
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
+        scoreText.text = score.ToString(); 
+    }
 
 }

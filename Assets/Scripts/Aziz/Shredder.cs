@@ -8,12 +8,14 @@ public class Shredder : MonoBehaviour
     private GameObject ballPrefab; 
     private bool shredder = false ;
     private Vector3 shredderPosition;
-    private GameObject ball; 
+    private GameObject ball;
+    private LevelController lvlController;  
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         shredderPosition = transform.position;
+        lvlController = FindAnyObjectByType<LevelController>();
     }
 
     void FixedUpdate()
@@ -37,6 +39,7 @@ public class Shredder : MonoBehaviour
     
     private IEnumerator SpawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
     {
+        lvlController.ballsCount = ballsCount;
         for (int i = 0; i <= ballsCount; i++)
         { 
             var smallBall = Instantiate(ballPrefab, spawnLocation, Quaternion.identity);
@@ -48,5 +51,6 @@ public class Shredder : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
         }
         Destroy(ball);
+        
     }
 }
