@@ -8,10 +8,9 @@ using UnityEngine.UI;
 public class Ball : MonoBehaviour
 {
     
-    [SerializeField] private Text time;
     public bool springActive = true; 
     private float counter = 0;
-   public int X = 500;
+    public int X = 500;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,12 +20,11 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //time.text = counter.ToString(); 
-        if(Input.GetKey("s")){
+        if(Input.GetKey(KeyCode.DownArrow)){
             counter += Time.deltaTime;
         }
         
-        if (Input.GetKeyUp("s"))
+        if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             if (springActive)
             {

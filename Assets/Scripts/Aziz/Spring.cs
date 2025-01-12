@@ -10,29 +10,28 @@ public class Spring : MonoBehaviour
 {
     private Vector3 originalScale;
     private Vector3 originalPosition;
-    private float shrinkAmount; 
+    private float shrinkAmount;
+    private float springRate; 
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         originalPosition = transform.localPosition;
         originalScale = transform.localScale;
-        shrinkAmount = 0.001f;
+        shrinkAmount = 0.01f;
+        springRate = 100f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("s"))
+        if (Input.GetKey(KeyCode.DownArrow))
         {
             if (originalScale.y * 0.25 < transform.localScale.y)
-            {
-                transform.localScale -= new Vector3(0f, shrinkAmount, 0f);
-                transform.position -= new Vector3(0f, shrinkAmount/2, 0f);
-            }
+                transform.ScaleYUpperEdge(-springRate*shrinkAmount);
         }
 
-        if (Input.GetKeyUp("s"))
+        if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             transform.localPosition = originalPosition;
             transform.localScale = originalScale;
