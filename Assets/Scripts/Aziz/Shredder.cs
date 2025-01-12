@@ -32,7 +32,7 @@ public class Shredder : MonoBehaviour
         ball = other.gameObject;
         ball.GetComponent<Rigidbody2D>().gravityScale = 0;
         shredder = true;
-        StartCoroutine(SpawnSmallerBalls(transform.position, 5, other.gameObject));
+        StartCoroutine(SpawnSmallerBalls(transform.position, 3, other.gameObject));
     }
     
     private IEnumerator SpawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
@@ -41,7 +41,7 @@ public class Shredder : MonoBehaviour
         { 
             var smallBall = Instantiate(ballPrefab, spawnLocation, Quaternion.identity);
             smallBall.layer = 4;
-            smallBall.transform.localScale *= .4f;
+            smallBall.transform.localScale *= .7f;
             float random1 = Random.Range(-50f,50f);
             float random2 = Random.Range(-50f,50f);
             smallBall.GetComponent<Rigidbody2D>().AddForce(new Vector2(random1*5f,random2*5f));
