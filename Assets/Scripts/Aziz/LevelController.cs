@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
@@ -9,25 +10,34 @@ public class LevelController : MonoBehaviour
 {
     [SerializeField] private Text LivesText;
     [SerializeField] private GameObject ballPrefab;
-    public Vector3 ballRespawnPosition; 
+
+    public Vector3 ballRespawnPosition;
+
     //public int lives = 3;
-    public ScoreKeeper score; 
-    public int ballsCount = 1 ; 
-    public void RespawnBall()
+    public ScoreKeeper score;
+    public int ballsCount = 1;
+
+    public void Start()
     {
         score = FindAnyObjectByType<ScoreKeeper>();
+    }
+
+    public void RespawnBall()
+    {
+        // score = FindAnyObjectByType<ScoreKeeper>();
         Instantiate(ballPrefab, ballRespawnPosition, quaternion.identity);
     }
-    
+
     public void DestroyBall(GameObject ball)
     {
-        
         ballsCount--;
         Destroy(ball);
         //lives--;
         //LivesText.text = lives.ToString();
-        if (ballsCount < 0)
+        if (ballsCount <= 0)
+        {
+            RespawnBall();
             score.ResetScore();
-            
+        }
     }
 }

@@ -40,7 +40,7 @@ public class Shredder : MonoBehaviour
     private IEnumerator SpawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
     {
         lvlController.ballsCount = ballsCount;
-        for (int i = 0; i <= ballsCount; i++)
+        for (int i = 0; i < ballsCount; i++)
         { 
             var smallBall = Instantiate(ballPrefab, spawnLocation, Quaternion.identity);
             smallBall.layer = 4;
