@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class Shredder : MonoBehaviour
 {
-    private LevelController lvlController;
+    [SerializeField]
+    private GameObject ballPrefab; 
     private bool shredder = false ;
     private Vector3 shredderPosition;
     private GameObject ball; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         shredderPosition = transform.position;
-        lvlController = FindAnyObjectByType<LevelController>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     void FixedUpdate()
@@ -27,8 +23,7 @@ public class Shredder : MonoBehaviour
             ball.transform.localScale -= new Vector3(0.0025f,0.0025f);
             float random1 = Random.Range(-.1f, .1f);
             float random2 = Random.Range(-.1f, .1f);
-            ball.transform.position = shredderPosition + new Vector3(random1, random2,0f);
-            //ball.transform.position = ballInitialPosition;
+            ball.transform.position = (shredderPosition + new Vector3(random1, random2,0f));
         } 
     }
 
@@ -36,28 +31,22 @@ public class Shredder : MonoBehaviour
     {
         ball = other.gameObject;
         ball.GetComponent<Rigidbody2D>().gravityScale = 0;
-        //StartCoroutine(Delay(0.25f));
-        //shakeBall(other.gameObject);
-        shredder = true; 
-        StartCoroutine(lvlController.spawnSmallerBalls(transform.position, 5, other.gameObject));
-        //StartCoroutine(Delay(2f));
-        //shredder = false;
+        shredder = true;
+        StartCoroutine(SpawnSmallerBalls(transform.position, 5, other.gameObject));
     }
-
-    // private void shakeBall(GameObject ball)
-    // {
-    //     
-    //     //ball.GetComponent<Rigidbody2D>().gravityScale = 0;
-    //     for (int i = 0; i < 10; i++)
-    //     {
-    //         float random1 = Random.Range(-.1f, .1f);
-    //         float random2 = Random.Range(-.1f, .1f);
-    //         ball.transform.Translate(new Vector2(random1, random2));
-    //     }
-    // }
-
-    private IEnumerator Delay(float sec)
+    
+    private IEnumerator SpawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
     {
-        yield return new WaitForSeconds(sec);
+        for (int i = 0; i <= ballsCount; i++)
+        { 
+            var smallBall = Instantiate(ballPrefab, spawnLocation, Quaternion.identity);
+            smallBall.layer = 4;
+            smallBall.transform.localScale *= .4f;
+            float random1 = Random.Range(-50f,50f);
+            float random2 = Random.Range(-50f,50f);
+            smallBall.GetComponent<Rigidbody2D>().AddForce(new Vector2(random1*5f,random2*5f));
+            yield return new WaitForSeconds(0.4f);
+        }
+        Destroy(ball);
     }
 }

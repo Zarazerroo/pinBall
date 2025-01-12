@@ -19,7 +19,6 @@ public class Drain : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         lvlController.DestroyBall(other.gameObject);
     }
 }
