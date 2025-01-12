@@ -20,11 +20,11 @@ public class Ball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey("s")){
+        if(Input.GetKey(KeyCode.DownArrow)){
             counter += Time.deltaTime;
         }
         
-        if (Input.GetKeyUp("s"))
+        if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             if (springActive)
             {
