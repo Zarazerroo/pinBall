@@ -1,6 +1,7 @@
 // Copyright Abdulaziz Alonizi 2025
 
 
+using System.Collections;
 using Unity.Mathematics;
 using Unity.Mathematics.Geometry;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class Spring : MonoBehaviour
         originalPosition = transform.localPosition;
         originalScale = transform.localScale;
         shrinkAmount = 0.01f;
-        springRate = 100f;
+        springRate = 150f;
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class Spring : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            if (originalScale.y * 0.25 < transform.localScale.y)
+            if (originalScale.y * 0.4f < transform.localScale.y)
                 transform.ScaleYUpperEdge(-springRate*shrinkAmount);
         }
 
@@ -37,4 +38,6 @@ public class Spring : MonoBehaviour
             transform.localScale = originalScale;
         }
     }
+
+
 }

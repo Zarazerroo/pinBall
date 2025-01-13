@@ -6,14 +6,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Ball : MonoBehaviour
-{
-    private SpringActiveTrigger springActiveTrigger; 
-    //public bool springActive = true; 
+{   
+    public float kickStrength = 2f;
+    private SpringActiveTrigger springActiveTrigger;
+    private Rigidbody2D ballRigidBody;
     private float counter = 0;
-    public int X = 300;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        ballRigidBody = gameObject.GetComponent<Rigidbody2D>();
         springActiveTrigger = FindAnyObjectByType<SpringActiveTrigger>();
     }
 
@@ -27,7 +29,7 @@ public class Ball : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             if (springActiveTrigger.isActive)
-            {
+            { 
                 KickBall();
                 counter = 0;
                 springActiveTrigger.isActive = false; 
@@ -37,9 +39,12 @@ public class Ball : MonoBehaviour
 
     private void KickBall()
     {
-        counter = math.min(1.3f, counter);
-        //Debug.Log(counter.ToString());
-        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f,counter * X));
+        if (ballRigidBody.totalForce.magnitude <= 0f)
+        {
+            counter = math.min(1.8f, counter);
+            Vector2 appliedForce = new Vector2(0f, counter*kickStrength);
+            ballRigidBody.AddForce(appliedForce, ForceMode2D.Impulse);
+        }
     }
     
     
