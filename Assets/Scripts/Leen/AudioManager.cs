@@ -5,12 +5,16 @@ public class AudioManager : MonoBehaviour
     [Header("---Audio Source---")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
-    [SerializeField] AudioSource WalkSource;
+    
 
     [Header("---Audio Clip---")]
     public AudioClip background;
     public AudioClip cuphit;
     public AudioClip pothit;
+    public AudioClip spring;
+    public AudioClip flippers;
+    
+    
     
 
     void Start()
@@ -19,4 +23,9 @@ public class AudioManager : MonoBehaviour
         musicSource.clip = background;
         musicSource.Play();
     }  
+
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
+    }
 }

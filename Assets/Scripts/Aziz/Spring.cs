@@ -8,10 +8,16 @@ using Math = System.Math;
 
 public class Spring : MonoBehaviour
 {
+    AudioManager audioManager;
     private Vector3 originalScale;
     private Vector3 originalPosition;
     private float shrinkAmount;
     private float springRate; 
+    
+    private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,12 +35,16 @@ public class Spring : MonoBehaviour
         {
             if (originalScale.y * 0.25 < transform.localScale.y)
                 transform.ScaleYUpperEdge(-springRate*shrinkAmount);
+            
+            //audioManager.PlaySFX(audioManager.spring);
         }
 
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             transform.localPosition = originalPosition;
             transform.localScale = originalScale;
+            
+            audioManager.PlaySFX(audioManager.spring);
         }
     }
 }

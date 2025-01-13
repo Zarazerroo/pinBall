@@ -1,9 +1,11 @@
-// All rights reserved © 2025 Muhammad Alhasan. Unauthorized copying, distribution, or modification is prohibited.
+// All rights reserved ï¿½ 2025 Muhammad Alhasan. Unauthorized copying, distribution, or modification is prohibited.
 
 using UnityEngine;
 
 public class PinballFlicker2D : MonoBehaviour
 {
+   AudioManager audioManager;
+
    [Header("Flicker Settings")]
    public float flickAngle = 45f; // Maximum rotation angle
    public float flickSpeed = 10f; // Speed of rotation
@@ -14,6 +16,11 @@ public class PinballFlicker2D : MonoBehaviour
    private float initialRotation; // Starting rotation angle
    private float targetRotation; // Target rotation angle
    private bool isFlicking = false;
+
+   private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
 
    private void Start()
    {
@@ -43,6 +50,8 @@ public class PinballFlicker2D : MonoBehaviour
       if (Input.GetKeyDown(flickKey) && !isFlicking)
       {
          StartCoroutine(Flick());
+
+         audioManager.PlaySFX(audioManager.flippers);
       }
    }
 
