@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3886132626694643897}
   - component: {fileID: 6903011102681196864}
   - component: {fileID: 7548767058964433772}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shredder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -11.95, y: 4.24, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.718929, g: 0, b: 0.8792453, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94327004961d246f6bf898c60ba21b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 6331428820837411909, guid: ce412f53f59c04399b65686471f514b5, type: 3}
+  ballPrefab: {fileID: 3893120149907690742, guid: fe21a2246ce68224bb0d37cca350e95f, type: 3}
