@@ -28,7 +28,7 @@ public class Spring : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            if (originalScale.y * 0.4f < transform.localScale.y)
+            if (originalScale.y * 0.45f < transform.localScale.y)
                 transform.ScaleYUpperEdge(-springRate*shrinkAmount);
         }
 

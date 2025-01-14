@@ -51,6 +51,5 @@ public class Shredder : MonoBehaviour
             yield return new WaitForSeconds(0.4f);
         }
         Destroy(ball);
-        
     }
 }
