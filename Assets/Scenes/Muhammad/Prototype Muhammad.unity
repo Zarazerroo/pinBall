@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 100
 --- !u!58 &34675714
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 10
+  points: 250
 --- !u!1 &213047277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,7 +1994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 100
 --- !u!1 &267386165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2746,7 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 10
+  points: 250
 --- !u!58 &389461461
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2879,7 +2879,7 @@ GameObject:
   - component: {fileID: 393456261}
   - component: {fileID: 393456262}
   m_Layer: 0
-  m_Name: 50
+  m_Name: 500
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3033,7 +3033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 25
+  points: 500
 --- !u!1001 &427637499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3476,7 +3476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 100
 --- !u!58 &478764008
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4087,7 +4087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 100
 --- !u!58 &609030311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5613,7 +5613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 784731251}
   m_Layer: 0
-  m_Name: 10s
+  m_Name: 100s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6672,7 +6672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938e41191b3e4e241b90db5055eb923b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 5
+  points: 100
 --- !u!58 &1018125971
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8391,7 +8391,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524061537}
   m_Layer: 0
-  m_Name: 25s
+  m_Name: 250s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
