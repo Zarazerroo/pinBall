@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shredder : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem ShreddingParticle;
+    private ParticleSystem ShreddingParticleInstance;
     [SerializeField]
     private GameObject ballPrefab; 
     private bool shredder = false ;
@@ -35,6 +37,9 @@ public class Shredder : MonoBehaviour
         ball.GetComponent<Rigidbody2D>().gravityScale = 0;
         shredder = true;
         StartCoroutine(SpawnSmallerBalls(transform.position, 3, other.gameObject));
+
+        // spawn in particles
+        SpawnShredderParticle();
     }
     
     private IEnumerator SpawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
@@ -52,5 +57,10 @@ public class Shredder : MonoBehaviour
         }
         Destroy(ball);
         
+    }
+
+    private void SpawnShredderParticle()
+    {
+        ShreddingParticleInstance = Instantiate(ShreddingParticle, transform.position, Quaternion.identity);
     }
 }
