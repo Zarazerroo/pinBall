@@ -17,7 +17,17 @@ public class LevelController : MonoBehaviour
     public ScoreKeeper score;
     public int ballsCount = 1;
 
-    public void Start()
+   private void Awake()
+   {
+      QualitySettings.vSyncCount = 1;
+      int refreshrate = (int)Screen.currentResolution.refreshRateRatio.value;
+      Application.targetFrameRate = refreshrate;
+      Debug.Log($"Target frame rate set to {refreshrate}");
+
+   }
+
+
+   public void Start()
     {
         score = FindAnyObjectByType<ScoreKeeper>();
     }
