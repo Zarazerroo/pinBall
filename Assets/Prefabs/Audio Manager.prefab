@@ -182,6 +182,11 @@ MonoBehaviour:
   pothit: {fileID: 8300000, guid: a5b469f6d9c82c64b8bde47541e21b12, type: 3}
   spring: {fileID: 8300000, guid: cbef251b1d6d3b845b7d646fdd22e200, type: 3}
   flippers: {fileID: 8300000, guid: 00a3515c5e84f0443baeb1a11838c835, type: 3}
+  blueitem: {fileID: 0}
+  purpleitem: {fileID: 0}
+  honey: {fileID: 8300000, guid: f13261127c80e7c42b572056fdbb8a8e, type: 3}
+  boosters: {fileID: 0}
+  shredding: {fileID: 0}
 --- !u!1 &5970743586300962770
 GameObject:
   m_ObjectHideFlags: 0

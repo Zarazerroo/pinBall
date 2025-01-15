@@ -2,7 +2,18 @@ using UnityEngine;
 
 public class MagneticRepel : MonoBehaviour
 {
+    AudioManager audioManager;
     public float repelForce = 10f; // Strength of the repelling force
+
+    private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
+
+   private void OnTriggerEnter2D(Collider2D other)
+    {
+        audioManager.PlaySFX(audioManager.cuphit);
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -21,5 +32,7 @@ public class MagneticRepel : MonoBehaviour
                 ballRigidbody.AddForce(direction * repelForce, ForceMode2D.Force);
             }
         }
+        
+
     }
 }
