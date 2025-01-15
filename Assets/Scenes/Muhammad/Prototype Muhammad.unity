@@ -10120,6 +10120,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2477092647362960978, guid: fe21a2246ce68224bb0d37cca350e95f, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3254972330386072231, guid: fe21a2246ce68224bb0d37cca350e95f, type: 3}
       propertyPath: m_LocalScale.z
       value: 0
@@ -10183,6 +10187,10 @@ PrefabInstance:
     - target: {fileID: 5584329829094017118, guid: fe21a2246ce68224bb0d37cca350e95f, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499003041639801423, guid: fe21a2246ce68224bb0d37cca350e95f, type: 3}
+      propertyPath: maxVelocity
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
