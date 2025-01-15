@@ -17,6 +17,8 @@ public class LevelController : MonoBehaviour
     public ScoreKeeper score;
     public int ballsCount = 1;
 
+
+
    private void Awake()
    {
       QualitySettings.vSyncCount = 1;
@@ -26,9 +28,10 @@ public class LevelController : MonoBehaviour
 
    }
 
-
    public void Start()
     {
+
+
         score = FindAnyObjectByType<ScoreKeeper>();
     }
 
