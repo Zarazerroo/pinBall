@@ -7993,6 +7993,7 @@ GameObject:
   - component: {fileID: 1408605932}
   - component: {fileID: 1408605934}
   - component: {fileID: 1408605933}
+  - component: {fileID: 1408605935}
   m_Layer: 0
   m_Name: LeftFlicker Up
   m_TagString: Untagged
@@ -8050,7 +8051,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408605931}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3efb2c1b086b42344a974110b4ddec1d, type: 3}
   m_Name: 
@@ -8058,6 +8059,22 @@ MonoBehaviour:
   flickAngle: -60
   flickSpeed: 30
   center: {x: -2.7, y: 1.3}
+  flickKey: 276
+--- !u!114 &1408605935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408605931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eada610e67eb2aa44ad19c5606495ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickAngle: -60
+  flickSpeed: 5
+  center: {x: -3, y: 1.3}
   flickKey: 276
 --- !u!1 &1464732068
 GameObject:
@@ -11553,6 +11570,7 @@ GameObject:
   - component: {fileID: 1832217260}
   - component: {fileID: 1832217262}
   - component: {fileID: 1832217261}
+  - component: {fileID: 1832217263}
   m_Layer: 0
   m_Name: RightFlicker Up
   m_TagString: Untagged
@@ -11610,7 +11628,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832217259}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3efb2c1b086b42344a974110b4ddec1d, type: 3}
   m_Name: 
@@ -11618,6 +11636,22 @@ MonoBehaviour:
   flickAngle: 60
   flickSpeed: 30
   center: {x: 1, y: 0}
+  flickKey: 275
+--- !u!114 &1832217263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832217259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eada610e67eb2aa44ad19c5606495ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickAngle: 60
+  flickSpeed: 5
+  center: {x: 2, y: 0.5}
   flickKey: 275
 --- !u!1 &1834125576
 GameObject:
@@ -13701,7 +13735,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7560999612326544906}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3efb2c1b086b42344a974110b4ddec1d, type: 3}
   m_Name: 
@@ -13721,6 +13755,7 @@ GameObject:
   - component: {fileID: 7616014257232159945}
   - component: {fileID: 6634922613304201681}
   - component: {fileID: 6839402631588835052}
+  - component: {fileID: 7616014257232159946}
   m_Layer: 0
   m_Name: LeftFlicker
   m_TagString: Untagged
@@ -13945,7 +13980,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3444973277404502759}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3efb2c1b086b42344a974110b4ddec1d, type: 3}
   m_Name: 
@@ -14058,6 +14093,7 @@ GameObject:
   - component: {fileID: 4347499104047849617}
   - component: {fileID: 3155262433449322418}
   - component: {fileID: 5536743365883389762}
+  - component: {fileID: 7560999612326544907}
   m_Layer: 0
   m_Name: RightFlicker
   m_TagString: Untagged
@@ -14065,6 +14101,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7560999612326544907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560999612326544906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eada610e67eb2aa44ad19c5606495ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickAngle: 60
+  flickSpeed: 5
+  center: {x: 2, y: 0.5}
+  flickKey: 275
 --- !u!1 &7592231179338004784
 GameObject:
   m_ObjectHideFlags: 0
@@ -14100,6 +14152,22 @@ Transform:
   - {fileID: 1240351052944417682}
   m_Father: {fileID: 4479046336783068876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7616014257232159946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3444973277404502759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eada610e67eb2aa44ad19c5606495ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickAngle: -60
+  flickSpeed: 5
+  center: {x: -3, y: 1.3}
+  flickKey: 276
 --- !u!61 &8311440825086533924
 BoxCollider2D:
   m_ObjectHideFlags: 0
