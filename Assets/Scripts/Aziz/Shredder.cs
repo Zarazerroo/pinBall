@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Shredder : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject ballPrefab; 
+    [SerializeField] private int smallBallsCount = 3;
+    [SerializeField] private GameObject ballPrefab; 
     private bool shredder = false ;
     private Vector3 shredderPosition;
     private GameObject ball;
-    private LevelController lvlController;  
+    private LevelController lvlController;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,12 +35,12 @@ public class Shredder : MonoBehaviour
         ball = other.gameObject;
         ball.GetComponent<Rigidbody2D>().gravityScale = 0;
         shredder = true;
-        StartCoroutine(SpawnSmallerBalls(transform.position, 3, other.gameObject));
+        lvlController.ballsCount = smallBallsCount;
+        StartCoroutine(SpawnSmallerBalls(transform.position, smallBallsCount, other.gameObject));
     }
     
     private IEnumerator SpawnSmallerBalls(Vector3 spawnLocation ,int ballsCount ,GameObject ball)
     {
-        lvlController.ballsCount = ballsCount;
         for (int i = 0; i < ballsCount; i++)
         { 
             var smallBall = Instantiate(ballPrefab, spawnLocation, Quaternion.identity);
@@ -50,6 +51,7 @@ public class Shredder : MonoBehaviour
             smallBall.GetComponent<Rigidbody2D>().AddForce(new Vector2(random1*5f,random2*5f));
             yield return new WaitForSeconds(0.4f);
         }
+        shredder = false;
         Destroy(ball);
     }
 }
