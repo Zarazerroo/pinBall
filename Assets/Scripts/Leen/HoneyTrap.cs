@@ -1,11 +1,23 @@
+using System;
 using UnityEngine;
 
 public class HoneyTrap : MonoBehaviour
 {
+    
     public float speedReductionFactor = 0.5f; // Factor to reduce the speed by (e.g., 0.5 means 50% reduction)
+    private ParticleSystem vfx;
+    private AudioSource sfx;
+
+    private void Start()
+    {
+        vfx = GetComponentInChildren<ParticleSystem>();
+        sfx = GetComponentInChildren<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // vfx.Play(); 
+        // sfx.Play(); 
         // Check if the object entering the trap is the ball
         Ball ball = collision.GetComponent<Ball>();
         if (ball != null)

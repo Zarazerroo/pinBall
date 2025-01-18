@@ -16,12 +16,13 @@ public class LevelController : MonoBehaviour
     [SerializeField] private GameObject pauseScreen; 
     
     public int ballsCount = 1;
-
+    
     private Leaderboard leaderboard; 
     private Vector3 ballRespawnPosition;
     private ScoreKeeper score;
     private bool gamePaused = true ; 
     private string userName;
+    private Vector2 initalSpawnPos = new Vector2(-78.5f, 9);
     
     public void Start()
     {
@@ -32,7 +33,7 @@ public class LevelController : MonoBehaviour
     
     public void RespawnBall()
     {
-        Instantiate(ballPrefab, ballRespawnPosition, quaternion.identity);
+        Instantiate(ballPrefab, initalSpawnPos, quaternion.identity);
         Debug.LogWarning($"Balls count at respawn{ballsCount}");
     }
 

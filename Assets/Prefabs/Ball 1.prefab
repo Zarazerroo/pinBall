@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 6026375190117880979}
   - component: {fileID: 2202518535401254361}
   - component: {fileID: 2148755932598498695}
+  - component: {fileID: 861652812305158289}
   m_Layer: 0
   m_Name: Ball 1
   m_TagString: Ball
@@ -316,6 +317,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.49345204}
   m_EdgeRadius: 0
+--- !u!114 &861652812305158289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2983720712725186685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5da23d6e7f0db4624aedd03c807f4253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5644491293632831002
 GameObject:
   m_ObjectHideFlags: 0
