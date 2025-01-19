@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+	AudioManager audioManager;
 
 	public float speed = 10f;
 
 	Rigidbody2D rb;
 
+	private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
 
+   private void OnCollisionEnter2D(Collision2D collision)
+    {
+		audioManager.PlaySFX(audioManager.RotateSfx);
+	}
 	void Start()
 	{
 			rb = GetComponent<Rigidbody2D>();

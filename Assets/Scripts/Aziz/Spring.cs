@@ -9,10 +9,16 @@ using Math = System.Math;
 
 public class Spring : MonoBehaviour
 {
+    AudioManager audioManager;
     private Vector3 originalScale;
     private Vector3 originalPosition;
     private float shrinkAmount;
     private float springRate; 
+
+    private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
      
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +32,10 @@ public class Spring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // if (Input.GetKeyDown(KeyCode.DownArrow))
+        // {
+        //     StartCoroutine(PlaySoundWithDelay(1f));
+        // }
         if (Input.GetKey(KeyCode.DownArrow))
         {
             if (originalScale.y * 0.45f < transform.localScale.y)
@@ -34,10 +44,17 @@ public class Spring : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
+            audioManager.PlaySFX(audioManager.spring); // Play the sound
             transform.localPosition = originalPosition;
             transform.localScale = originalScale;
         }
     }
+
+    // private IEnumerator PlaySoundWithDelay(float delay)
+    // {
+    //     yield return new WaitForSeconds(delay); // Wait for the specified delay
+    //     audioManager.PlaySFX(audioManager.spring); // Play the sound
+    // }
 
 
 }

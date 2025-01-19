@@ -1,16 +1,17 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreKeeper : MonoBehaviour
-{   
-    Text scoreText;
+{
+    TextMeshProUGUI scoreText;
     public int score = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //Text component that is attached to this object, which will display the score
-        scoreText = GetComponent<Text>(); 
+        scoreText = GetComponent<TextMeshProUGUI>(); 
         // score 0 - int -> string
         scoreText.text = score.ToString();
     }
