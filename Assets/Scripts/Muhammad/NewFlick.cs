@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NewFlick : MonoBehaviour
 {
+   AudioManager audioManager;
    [Header("Flicker Settings")]
    public float flickAngle = 45f; // Maximum rotation angle
    public float flickSpeed = 10f; // Speed of rotation
@@ -17,6 +18,11 @@ public class NewFlick : MonoBehaviour
    private bool isFlicking = false;
    private bool rotatingToTarget = false; // Track if rotating to the target or returning
    private float currentRotation;
+
+   private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
 
    private void Start()
    {
@@ -48,6 +54,7 @@ public class NewFlick : MonoBehaviour
       if (Input.GetKeyDown(flickKey) && !isFlicking)
       {
          StartFlick();
+         audioManager.PlaySFX(audioManager.flippers);
       }
    }
 
