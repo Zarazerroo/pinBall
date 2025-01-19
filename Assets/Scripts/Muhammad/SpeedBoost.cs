@@ -5,18 +5,21 @@ public class SpeedBoost : MonoBehaviour
    public float speedFactor = 2f; 
 
    private ParticleSystem vfx;
-   private AudioSource sfx;
+   private AudioSource[] sources;
 
    private void Start()
    {
       vfx = GetComponentInChildren<ParticleSystem>();
-      sfx = GetComponentInChildren<AudioSource>();
+      sources = GetComponentsInChildren<AudioSource>();
    }
 
    private void OnTriggerEnter2D(Collider2D collision)
    {
       vfx.Play();
-      sfx.Play();
+      foreach (var sfx in sources)
+      {
+         sfx.Play();
+      }
       
       // Check if the object entering the trap is the ball
       Ball ball = collision.GetComponent<Ball>();
