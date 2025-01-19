@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 using Newtonsoft.Json;
+using NUnit.Framework;
 
 public class Player
 {
@@ -51,18 +52,32 @@ public class Leaderboard : MonoBehaviour
 
     private void readFile()
     {
-        var streamReader = new StreamReader(filePath);
-        players = JsonConvert.DeserializeObject<List<Player>>(streamReader.ReadToEnd());
-        streamReader.Close();
+        if (File.Exists(filePath))
+        {
+            var streamReader = new StreamReader(filePath);
+            players = JsonConvert.DeserializeObject<List<Player>>(streamReader.ReadToEnd());
+            streamReader.Close();
+            
+            if (players == null)
+                players = new List<Player>();
+        }
+        else
+        {
+            players = new List<Player>();
+        }
     }
 
     public string getLeaderBoard()
     {
         var top10 = "";
-        for (int i = 0; i < players.Count; i++)
+        if (players.Count > 0)
         {
-            top10 += $"\n {players[i].name} : {players[i].score}";
+            for (int i = 0; i < players.Count; i++)
+            {
+                top10 += $"\n {players[i].name} : {players[i].score}";
+            }
         }
+
         return top10;
     }
 
