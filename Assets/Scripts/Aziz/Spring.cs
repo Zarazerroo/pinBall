@@ -34,21 +34,25 @@ public class Spring : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            audioManager.PlaySFX(audioManager.spring);
+            StartCoroutine(PlaySoundWithDelay(1f));
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
             if (originalScale.y * 0.45f < transform.localScale.y)
                 transform.ScaleYUpperEdge(-springRate*shrinkAmount);
-            audioManager.PlaySFX(audioManager.spring);
         }
 
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
             transform.localPosition = originalPosition;
             transform.localScale = originalScale;
-            audioManager.PlaySFX(audioManager.spring);
         }
+    }
+
+    private IEnumerator PlaySoundWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Wait for the specified delay
+        audioManager.PlaySFX(audioManager.spring); // Play the sound
     }
 
 
