@@ -1,22 +1,70 @@
 fileFormatVersion: 2
-guid: 36cef80e543124e5e89a09b20495b7bf
+guid: 051940195dfb3104c8198d3b5d9ae0a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2876409113969650406
-    second: party_0
+      213: -2369242729504129336
+    second: first scene minue_0
   - first:
-      213: 1254575143133043084
-    second: party_1
+      213: 2483281217774937249
+    second: first scene minue_1
   - first:
-      213: 4444686414733898967
-    second: party_2
+      213: 781774761600640613
+    second: first scene minue_2
   - first:
-      213: 5219669588197214657
-    second: party_3
+      213: -1598213335892405828
+    second: first scene minue_3
   - first:
-      213: -8542644396688929184
-    second: party_4
+      213: -6832512631154892759
+    second: first scene minue_4
+  - first:
+      213: 2011371468702271760
+    second: first scene minue_5
+  - first:
+      213: 7573981304323992860
+    second: first scene minue_6
+  - first:
+      213: -8565526049399918634
+    second: first scene minue_7
+  - first:
+      213: -374493126717171546
+    second: first scene minue_8
+  - first:
+      213: -5279629159156610905
+    second: first scene minue_9
+  - first:
+      213: 4982242802608094756
+    second: first scene minue_10
+  - first:
+      213: 7119122510173164367
+    second: first scene minue_11
+  - first:
+      213: 7396898482631957714
+    second: first scene minue_12
+  - first:
+      213: -6560857404414450945
+    second: first scene minue_13
+  - first:
+      213: 5821978218634753072
+    second: first scene minue_14
+  - first:
+      213: 850213003579657934
+    second: first scene minue_15
+  - first:
+      213: 1768331451205772804
+    second: first scene minue_16
+  - first:
+      213: -5468125240634565023
+    second: first scene minue_17
+  - first:
+      213: 2841455987842200774
+    second: first scene minue_18
+  - first:
+      213: -8551097179755944911
+    second: first scene minue_19
+  - first:
+      213: -8348325222260427161
+    second: first scene minue_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,128 +156,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: party_0
+      name: first scene minue_0
       rect:
         serializedVersion: 2
-        x: 582
-        y: 7171
-        width: 819
-        height: 570
+        x: 880
+        y: 6614
+        width: 14800
+        height: 2573
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ea6bda69de0be720800000000000000
-      internalID: 2876409113969650406
+      spriteID: 65520dd4ca3cac74fa0b78f4708c834a
+      internalID: -2048367834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: party_1
+      name: first scene minue_1
       rect:
         serializedVersion: 2
-        x: 511
-        y: 5462
-        width: 757
-        height: 1302
+        x: 4272
+        y: 3534
+        width: 5267
+        height: 1966
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c89da761275296110800000000000000
-      internalID: 1254575143133043084
+      spriteID: c254cd2e988687f499a447ed5239d1c4
+      internalID: 2090860077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: party_2
+      name: first scene minue_2
       rect:
         serializedVersion: 2
-        x: 856
-        y: 3434
-        width: 889
-        height: 1347
+        x: 4876
+        y: 1235
+        width: 3751
+        height: 1464
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d4f738ceb2bead30800000000000000
-      internalID: 4444686414733898967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: party_3
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 1915
-        width: 641
-        height: 795
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c98761e5ddff6840800000000000000
-      internalID: 5219669588197214657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: party_4
-      rect:
-        serializedVersion: 2
-        x: 1361
-        y: 491
-        width: 503
-        height: 584
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06e00ec9e2e627980800000000000000
-      internalID: -8542644396688929184
+      spriteID: 6ea2bc2925834f441a2d677acdd07955
+      internalID: -1263893803
       vertices: []
       indices: 
       edges: []
@@ -238,7 +229,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 37a9834c1f3b9a54a938da5549a0000a
     internalID: 0
     vertices: []
     indices: 
@@ -248,11 +239,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      party_0: 2876409113969650406
-      party_1: 1254575143133043084
-      party_2: 4444686414733898967
-      party_3: 5219669588197214657
-      party_4: -8542644396688929184
+      first scene minue_0: -2048367834
+      first scene minue_1: 2090860077
+      first scene minue_2: -1263893803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

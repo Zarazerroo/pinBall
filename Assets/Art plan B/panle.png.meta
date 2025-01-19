@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: 36cef80e543124e5e89a09b20495b7bf
+guid: 7e78d356733e90642976b5c499c30a42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2876409113969650406
-    second: party_0
+      213: -4170906593042431429
+    second: panle_0
   - first:
-      213: 1254575143133043084
-    second: party_1
-  - first:
-      213: 4444686414733898967
-    second: party_2
-  - first:
-      213: 5219669588197214657
-    second: party_3
-  - first:
-      213: -8542644396688929184
-    second: party_4
+      213: -6094762152708590671
+    second: panle_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: party_0
+      name: panle_0
       rect:
         serializedVersion: 2
-        x: 582
-        y: 7171
-        width: 819
-        height: 570
+        x: 2633
+        y: 1332
+        width: 8451
+        height: 5913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ea6bda69de0be720800000000000000
-      internalID: 2876409113969650406
+      spriteID: b320f525d86fd16c0800000000000000
+      internalID: -4170906593042431429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: party_1
+      name: panle_1
       rect:
         serializedVersion: 2
-        x: 511
-        y: 5462
-        width: 757
-        height: 1302
+        x: 9005
+        y: 7128
+        width: 340
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,74 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c89da761275296110800000000000000
-      internalID: 1254575143133043084
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: party_2
-      rect:
-        serializedVersion: 2
-        x: 856
-        y: 3434
-        width: 889
-        height: 1347
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d4f738ceb2bead30800000000000000
-      internalID: 4444686414733898967
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: party_3
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 1915
-        width: 641
-        height: 795
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c98761e5ddff6840800000000000000
-      internalID: 5219669588197214657
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: party_4
-      rect:
-        serializedVersion: 2
-        x: 1361
-        y: 491
-        width: 503
-        height: 584
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06e00ec9e2e627980800000000000000
-      internalID: -8542644396688929184
+      spriteID: 1b33f411d1e0b6ba0800000000000000
+      internalID: -6094762152708590671
       vertices: []
       indices: 
       edges: []
@@ -247,12 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      party_0: 2876409113969650406
-      party_1: 1254575143133043084
-      party_2: 4444686414733898967
-      party_3: 5219669588197214657
-      party_4: -8542644396688929184
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
