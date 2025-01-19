@@ -4,10 +4,16 @@ using UnityEngine.Rendering.Universal;
 
 public class Points : MonoBehaviour
 {
+    AudioManager audioManager;
     private float initialIntensity;
     private Light2D lightComponent;
     private ScoreKeeper theScoreKeeper; 
     [SerializeField] int points = 1;
+
+    private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,7 +26,8 @@ public class Points : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) 
     { 
         StartCoroutine(StrobingEffect());
-        theScoreKeeper.IncreaseScore(points);       
+        theScoreKeeper.IncreaseScore(points);
+        audioManager.PlaySFX(audioManager.Points); 
     }
     
     

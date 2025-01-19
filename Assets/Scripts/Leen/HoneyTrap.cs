@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class HoneyTrap : MonoBehaviour
 {
-    
+    AudioManager audioManager;
     public float speedReductionFactor = 0.5f; // Factor to reduce the speed by (e.g., 0.5 means 50% reduction)
     private ParticleSystem vfx;
     private AudioSource sfx;
+
+    private void Awake()
+   {
+      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   }
 
     private void Start()
     {
@@ -30,6 +35,7 @@ public class HoneyTrap : MonoBehaviour
                 rb.linearVelocity *= speedReductionFactor;
             }
         }
+        audioManager.PlaySFX(audioManager.HoneySfx);
     }
 
 }

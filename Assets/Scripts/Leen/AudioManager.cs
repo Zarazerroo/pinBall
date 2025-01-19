@@ -9,15 +9,14 @@ public class AudioManager : MonoBehaviour
 
     [Header("---Audio Clip---")]
     public AudioClip background;
-    public AudioClip cuphit;
-    public AudioClip pothit;
+    public AudioClip Points;
 
     [Header("---New Audio Clip---")]
     public AudioClip spring;
     public AudioClip flippers;
-    public AudioClip blueitem;
-    public AudioClip purpleitem;
-    public AudioClip honey;
+    public AudioClip MagneticRepelSfx;
+    public AudioClip RotateSfx;
+    public AudioClip HoneySfx;
     public AudioClip boosters;
     public AudioClip shredding;
     
