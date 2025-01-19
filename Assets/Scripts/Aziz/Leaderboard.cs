@@ -28,6 +28,8 @@ public class Leaderboard : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SaveScore(int score, string name)
     {
+        if (name == "")
+            name = "John Doe";
         
         players.Insert(0,new Player(name,score)); 
         players = players.OrderByDescending(p => p.score).ToList();

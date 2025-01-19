@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ScoreKeeper : MonoBehaviour
-{   
+{
     TextMeshProUGUI scoreText;
     public int score = 0;
 
