@@ -25,9 +25,9 @@ public class Points : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) 
     { 
+        audioManager.PlaySFX(audioManager.Points); 
         StartCoroutine(StrobingEffect());
         theScoreKeeper.IncreaseScore(points);
-        audioManager.PlaySFX(audioManager.Points); 
     }
     
     
