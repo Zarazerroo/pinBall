@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gold rebon_0: -3458169056048517566
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
