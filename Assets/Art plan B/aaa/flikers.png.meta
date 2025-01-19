@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flikers_0: 5266249135309920132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

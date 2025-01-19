@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/protoType Build/StartScreen transition.unity
-    guid: 6949720ccd5f4fb46b784c24157ffbdf
+    path: Assets/Scenes/Start.unity
+    guid: ed308f8888a1f924eaa7f2fdb90d8c8d
   - enabled: 1
-    path: Assets/Scenes/Muhammad/Prototype Muhammad.unity
-    guid: d9b2e3178b461eb48b9376ee62ecb495
+    path: Assets/Scenes/Muhammad/Full game M.unity
+    guid: 8eb7f9cfc5d533745adf3cb03b3d457c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
