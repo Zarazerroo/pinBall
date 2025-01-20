@@ -7317,7 +7317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5287972815614034978, guid: c52a9ece469c98243a4cf49da85b9ee3, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15769,7 +15769,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 15.68
   m_Depth: -1
   m_CullingMask:
@@ -15864,7 +15864,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471512359}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 453a0b065139e4f4fb3bfe5bbc0c8f5c, type: 3}
   m_Name: 
@@ -20918,6 +20918,10 @@ PrefabInstance:
       propertyPath: m_FalloffIntensity
       value: 0.46
       objectReference: {fileID: 0}
+    - target: {fileID: 882641896597319285, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: d8e694a602c6a4545bc88def76fb6767, type: 2}
     - target: {fileID: 1737324357347911584, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9162643
@@ -29795,7 +29799,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8e694a602c6a4545bc88def76fb6767, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -40464,7 +40468,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8e694a602c6a4545bc88def76fb6767, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -41064,6 +41068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 259648678}
     m_Modifications:
+    - target: {fileID: 882641896597319285, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: d8e694a602c6a4545bc88def76fb6767, type: 2}
     - target: {fileID: 2322958705525538838, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.07
