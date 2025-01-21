@@ -18,91 +18,130 @@ public class Player
 }
 public class Leaderboard : MonoBehaviour
 {
-    private string filePath = "Assets/Scripts/Aziz/Leaderboard.json";
-    private List<Player> players;
-
-    private void Awake()
+    private const string KEY = "LEADERBOARD";
+    private string FilePath = "Assets/Scripts/Aziz/Leaderboard.json";
+    private List<Player> Players;
+    
+    public string getLeaderBoard()
     {
-        readFile();
+        var top10 = "";
+        if (Players.Count > 0)
+        {
+            for (int i = 0; i < Players.Count; i++)
+            {
+                top10 += $"\n {Players[i].name} : {Players[i].score}";
+            }
+        }
+        return top10;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SaveScore(int score, string name)
     {
         if (name == "")
+        {
             name = "John Doe";
-        
-        players.Insert(0,new Player(name,score)); 
-        players = players.OrderByDescending(p => p.score).ToList();
-        
-        if(players.Count > 10)
-            players.RemoveAt(players.Count-1);
-        
-        updatedFile();
-        readFile();
-    }
+        }
 
-    private void updatedFile()
+        Players.Insert(0,new Player(name,score)); 
+        Players = Players.OrderByDescending(p => p.score).ToList();
+
+        if (Players.Count > 10)
+        {
+            Players.RemoveAt(Players.Count - 1);
+        }
+        
+#if UNITY_WEBGL
+        SaveToWeb();
+        ReadFromWeb();
+#elif UNITY_EDITOR
+        SaveToJson();
+        ReadFromJson();
+#endif
+    }
+    
+    private void Awake()
     {
-        var streamWrite = new StreamWriter(filePath, false);
-        var jsonToString = JsonConvert.SerializeObject(players);
+#if UNITY_EDITOR
+        ReadFromJson();
+#elif UNITY_WEBGL
+        ReadFromWeb();
+#endif
+    }
+    
+    /// <summary>
+    /// updates the json file with the current version of the players list
+    /// </summary>
+    private void SaveToJson()
+    {
+        var streamWrite = new StreamWriter(FilePath, false);
+        var jsonToString = JsonConvert.SerializeObject(Players);
         streamWrite.Write(jsonToString);
         streamWrite.Close();
     }
 
-    private void readFile()
+    /// <summary>
+    /// reads from a json file and populate the list of players
+    /// </summary>
+    private void ReadFromJson()
     {
-        if (File.Exists(filePath))
+        if (File.Exists(FilePath))
         {
-            var streamReader = new StreamReader(filePath);
-            players = JsonConvert.DeserializeObject<List<Player>>(streamReader.ReadToEnd());
+            var streamReader = new StreamReader(FilePath);
+            Players = JsonConvert.DeserializeObject<List<Player>>(streamReader.ReadToEnd());
             streamReader.Close();
-            
-            if (players == null)
-                players = new List<Player>();
+
+            if (Players == null)
+            {
+                Players = new List<Player>();
+            }
         }
         else
         {
-            players = new List<Player>();
+            Players = new List<Player>();
         }
     }
 
-    public string getLeaderBoard()
+    /// <summary>
+    /// converts the list of current player to readable string,
+    /// for use in text view
+    /// </summary>
+    /// <returns></returns>
+    private void SaveToWeb()
     {
-        var top10 = "";
-        if (players.Count > 0)
-        {
-            for (int i = 0; i < players.Count; i++)
-            {
-                top10 += $"\n {players[i].name} : {players[i].score}";
-            }
-        }
-
-        return top10;
+        var leaderBoardText = JsonConvert.SerializeObject(Players);
+        PlayerPrefs.SetString(KEY,leaderBoardText);
+        PlayerPrefs.Save();
     }
-
+    private void ReadFromWeb()
+    {
+        var leaderBoardText = PlayerPrefs.GetString(KEY,"[{\"name\":\"John Doe\",\"score\":0}]");
+        Players = JsonConvert.DeserializeObject<List<Player>>(leaderBoardText);
+    }
+    /*
+     
     private void InsertInPlayerList(List<Player> list ,Player newPlayer)
-    {
-        // if highest score 
-        if(newPlayer.score> players[0].score)
-            players.Insert(0,newPlayer);
-        // if lowest score 
-        else if(newPlayer.score <= players[players.Count-1].score)
-            players.Insert(players.Count , newPlayer);
-        else
-        {
-            for (int i = 1; i < players.Count; i++)
-            {
-                if ((players[i - 1].score <= newPlayer.score) && (newPlayer.score < players[i].score))
-                {
-                    players.Insert(i, newPlayer);
-                    return;
-                }
-            }
-        }
-        
-        if(players.Count >10)
-            players.RemoveAt(players.Count-1);
-
-    }
+       {
+           // if highest score 
+           if(newPlayer.score> Players[0].score)
+               Players.Insert(0,newPlayer);
+           // if lowest score 
+           else if(newPlayer.score <= Players[Players.Count-1].score)
+               Players.Insert(Players.Count , newPlayer);
+           else
+           {
+               for (int i = 1; i < Players.Count; i++)
+               {
+                   if ((Players[i - 1].score <= newPlayer.score) && (newPlayer.score < Players[i].score))
+                   {
+                       Players.Insert(i, newPlayer);
+                       return;
+                   }
+               }
+           }
+           
+           if(Players.Count >10)
+               Players.RemoveAt(Players.Count-1);
+       }
+       
+     */
 }
