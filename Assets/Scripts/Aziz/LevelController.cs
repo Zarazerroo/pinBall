@@ -13,10 +13,11 @@ public class LevelController : MonoBehaviour
     [SerializeField] private InputField userNameField; 
     [SerializeField] private Text LivesText;
     [SerializeField] private GameObject ballPrefab;
-    [SerializeField] private GameObject pauseScreen; 
-    
+    [SerializeField] private GameObject pauseScreen;
+    [SerializeField] private Spotlight spotlightManager;
+
+    private int lives = 3; 
     public int ballsCount = 1;
-    
     private Leaderboard leaderboard; 
     private Vector3 ballRespawnPosition;
     private ScoreKeeper score;
@@ -39,10 +40,32 @@ public class LevelController : MonoBehaviour
 
     public void DestroyBall(GameObject ball)
     {
-        Destroy(ball); 
-        leaderboard.SaveScore(score.score,userName);
-        PauseGame();
-        score.ResetScore();
+        
+        lives--;
+        Destroy(ball);
+        if (lives > 0)
+        {
+            RespawnBall();
+        }
+
+        switch (lives)
+        {
+            case 3 :
+                spotlightManager.WarningFlash(Color.blue); 
+                break;
+            case 2 :
+                spotlightManager.WarningFlash(Color.yellow); 
+                break;
+            case 1 : 
+                spotlightManager.WarningFlash(Color.red);
+                break;
+        }
+        if(lives == 0 )
+        {
+            leaderboard.SaveScore(score.score,userName);
+            PauseGame();
+            score.ResetScore();
+        }
     }
 
     public void PauseGame()
@@ -56,6 +79,7 @@ public class LevelController : MonoBehaviour
 
     public void StartGame()
     {
+        lives = 3; 
         RespawnBall();
         gamePaused = false;
         pauseScreen.GetComponent<SpriteRenderer>().enabled = false;
