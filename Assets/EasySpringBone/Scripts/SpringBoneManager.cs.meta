@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 8111e45dc2c4c2f48a2b59d45bd933b0
+timeCreated: 1458298302
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177872
+  packageName: Easy SpringBone
+  packageVersion: 1.2.1
+  assetPath: Assets/EasySpringBone/Scripts/SpringBoneManager.cs
+  uploadId: 515042
