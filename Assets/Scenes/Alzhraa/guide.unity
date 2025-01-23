@@ -427,6 +427,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Guide
       objectReference: {fileID: 0}
+    - target: {fileID: 9157721497109702408, guid: 17136768a3761fa4ead25c2ab40d1d44, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16.399963
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157721497109702408, guid: 17136768a3761fa4ead25c2ab40d1d44, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.900024
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
