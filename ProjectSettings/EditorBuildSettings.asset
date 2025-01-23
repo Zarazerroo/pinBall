@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Start.unity
     guid: ed308f8888a1f924eaa7f2fdb90d8c8d
+  - enabled: 1
+    path: Assets/Scenes/Alzhraa/Start2.unity
+    guid: 5db20e69ef95b2b4d9b38e4c8acdd205
   - enabled: 1
     path: Assets/Scenes/Aziz/Submit Plz.unity
     guid: 0e0893eda56c641668046027a956d064
