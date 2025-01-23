@@ -6898,11 +6898,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.385
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.139
+      value: 0.232
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7351,6 +7351,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5215317767965106970, guid: c52a9ece469c98243a4cf49da85b9ee3, type: 3}
+      propertyPath: RotateSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 900c1b2395d17e043a15bbe00d488f8f, type: 3}
     - target: {fileID: 5215317767965106970, guid: c52a9ece469c98243a4cf49da85b9ee3, type: 3}
       propertyPath: background
       value: 
@@ -23324,11 +23328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.004
+      value: -0.391
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.121
+      value: 0.221
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29140,11 +29144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.04
+      value: -0.373
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.134
+      value: 0.213
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30707,16 +30711,12 @@ PrefabInstance:
       value: Elec Spawner (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.049898498
-      objectReference: {fileID: 0}
-    - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.004
+      value: -0.423
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.121
+      value: 0.199
       objectReference: {fileID: 0}
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30749,22 +30749,6 @@ PrefabInstance:
     - target: {fileID: 5104721062608185321, guid: a8d64a2317970384db742ea327d3e193, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.652
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825310405617863571, guid: a8d64a2317970384db742ea327d3e193, type: 3}
-      propertyPath: m_Size.x
-      value: 33.069546
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825310405617863571, guid: a8d64a2317970384db742ea327d3e193, type: 3}
-      propertyPath: m_Size.y
-      value: 16.986034
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825310405617863571, guid: a8d64a2317970384db742ea327d3e193, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.66114473
-      objectReference: {fileID: 0}
-    - target: {fileID: 6825310405617863571, guid: a8d64a2317970384db742ea327d3e193, type: 3}
-      propertyPath: m_Offset.y
-      value: -2.3430166
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
