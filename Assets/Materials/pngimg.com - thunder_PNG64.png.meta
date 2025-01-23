@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngimg.com - thunder_PNG64_0: 1314656047158530681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
