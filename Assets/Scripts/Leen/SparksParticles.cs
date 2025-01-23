@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class SparksParticles : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem ShreddingParticle;
-    private ParticleSystem ShreddingParticleInstance;
+    [SerializeField] public ParticleSystem ShreddingParticle;
+    public ParticleSystem ShreddingParticleInstance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
