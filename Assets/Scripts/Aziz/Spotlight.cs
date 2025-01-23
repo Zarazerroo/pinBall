@@ -9,6 +9,7 @@ public class Spotlight : MonoBehaviour
 {
     [SerializeField] private bool LightSwitch = false; 
     private List<Light2D> AllLights;
+    
 
     private Color InitialLightColor;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,19 +26,5 @@ public class Spotlight : MonoBehaviour
             StartCoroutine(light.LightStrobing(strobingFrequency:0.2f,strobingDuration:5,color:color));
         }
     }
-    // public void StrobeLights()
-    // {
-    //     foreach (var light in AllLights)
-    //     {
-    //         StartCoroutine(light.LightStrobing());
-    //     }
-    // }
-    //
-    // public void ChangeColor(Color color)
-    // {
-    //     foreach (var light in AllLights)
-    //     {
-    //         light.color = color;
-    //     }
-    // }
+
 }

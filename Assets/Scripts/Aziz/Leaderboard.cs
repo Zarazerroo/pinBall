@@ -51,9 +51,12 @@ public class Leaderboard : MonoBehaviour
         }
         
 #if UNITY_WEBGL
+        Debug.LogWarning("saving to web");
         SaveToWeb();
         ReadFromWeb();
-#elif UNITY_EDITOR
+#endif
+#if UNITY_EDITOR
+        Debug.LogWarning("saving to local");
         SaveToJson();
         ReadFromJson();
 #endif
@@ -62,8 +65,13 @@ public class Leaderboard : MonoBehaviour
     private void Awake()
     {
 #if UNITY_EDITOR
+        Debug.LogWarning("reading from local");
+
         ReadFromJson();
-#elif UNITY_WEBGL
+#endif        
+#if UNITY_WEBGL
+        Debug.LogWarning("reading from web");
+
         ReadFromWeb();
 #endif
     }

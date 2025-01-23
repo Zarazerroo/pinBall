@@ -18,7 +18,7 @@ namespace Aziz
             }
         }
         
-        public static IEnumerator LightStrobing(this Light2D light, Color color ,float strobingFrequency = 0.1f, int strobingDuration =5  )
+        public static IEnumerator LightStrobing(this Light2D light,Color color ,float strobingFrequency = 0.1f, int strobingDuration =5   )
         {
             var lightInitialColor = light.color; 
             var lightInitialIntensity = light.intensity; 
@@ -30,6 +30,25 @@ namespace Aziz
                 light.intensity = lightInitialIntensity;
                 yield return new WaitForSeconds(strobingFrequency);
                 light.color = lightInitialColor;
+            }
+        }
+        
+        
+        public static IEnumerator LightStrobing(this Light2D light, SpriteRenderer element,Color color ,float strobingFrequency = 0.1f, int strobingDuration =5   )
+        {
+            var elementInitialColor = element.color;
+            var lightInitialColor = light.color; 
+            var lightInitialIntensity = light.intensity; 
+            for (int i = 0; i < strobingDuration; i++)
+            {
+                element.color = color;
+                light.color = color;
+                light.intensity = 0;
+                yield return new WaitForSeconds(strobingFrequency);
+                light.intensity = lightInitialIntensity;
+                yield return new WaitForSeconds(strobingFrequency);
+                light.color = lightInitialColor;
+                element.color = elementInitialColor;
             }
         }
     }
