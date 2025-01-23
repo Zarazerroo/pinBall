@@ -7197,7 +7197,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 27160421853467246, guid: c52a9ece469c98243a4cf49da85b9ee3, type: 3}
       propertyPath: m_Volume
-      value: 0
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3476764606136085145, guid: c52a9ece469c98243a4cf49da85b9ee3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7249,7 +7249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5550762496397982928, guid: c52a9ece469c98243a4cf49da85b9ee3, type: 3}
       propertyPath: m_Volume
-      value: 0.097
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15375,7 +15375,7 @@ GameObject:
   - component: {fileID: 439981805}
   - component: {fileID: 439981808}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: TP hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15499,7 +15499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edbd7abf6164d2c49bf97aff5f9836fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TP_end: {x: -78.5, y: 12}
+  TP_end: {x: -78.5, y: 15}
 --- !u!1 &447170618
 GameObject:
   m_ObjectHideFlags: 0
@@ -16697,7 +16697,7 @@ Transform:
   m_GameObject: {fileID: 506431548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.952892, y: 1.9925864, z: 0}
+  m_LocalPosition: {x: 37.45, y: 1.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22354,7 +22354,7 @@ Transform:
   m_GameObject: {fileID: 1027311024}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.27699, y: 41.40425, z: 0.049043573}
+  m_LocalPosition: {x: 60.27538, y: 40.760666, z: 0.049043573}
   m_LocalScale: {x: 0.2774, y: 0.2774, z: 0.2774}
   m_ConstrainProportionsScale: 0
   m_Children: []
