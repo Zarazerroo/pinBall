@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5104721062608185321}
   - component: {fileID: 3107719600281685049}
-  - component: {fileID: 6245942304156509493}
-  - component: {fileID: 2936359330602680426}
+  - component: {fileID: 6430945408596028207}
+  - component: {fileID: 2555696827169634723}
+  - component: {fileID: 4676229834321158446}
   m_Layer: 0
   m_Name: Elec Spawner
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.19, y: 0.15972757, z: -0.015693732}
-  m_LocalScale: {x: 0.39958343, y: 0.39958328, z: 0}
+  m_LocalScale: {x: 0.049898498, y: 0.39958328, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShreddingParticle: {fileID: 8850638738825519690, guid: a4635635915c81c4799c43845e6fd33c, type: 3}
---- !u!60 &6245942304156509493
+--- !u!60 &6430945408596028207
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,21 +94,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.274064, y: 0.47534233}
-      - {x: 0.87587214, y: 0.7952504}
-      - {x: 0.44928545, y: 0.9195957}
-      - {x: 0.225851, y: 1.1217728}
-      - {x: -0.20486893, y: 1.4203475}
-      - {x: -0.64318323, y: 1.0871435}
-      - {x: -0.9433392, y: 0.71751827}
-      - {x: -1.0757378, y: 0.47144327}
-      - {x: -1.1619776, y: -0.17323759}
-      - {x: -0.4645734, y: -1.250439}
-      - {x: 0.7664902, y: -0.8548176}
-      - {x: 1.2442777, y: -0.5144172}
-      - {x: 1.2751949, y: -0.087039605}
+    - - {x: 22.687798, y: 0.63881004}
+      - {x: 20.219517, y: 0.9458652}
+      - {x: 11.558221, y: 0.4103791}
+      - {x: 9.006067, y: 0.10788301}
+      - {x: 9.299763, y: -1.0300629}
+      - {x: 18.80543, y: -1.8057739}
+      - {x: 22.627296, y: -1.4962662}
+      - {x: 27.46801, y: -0.35333043}
   m_UseDelaunayMesh: 0
---- !u!60 &2936359330602680426
+--- !u!60 &2555696827169634723
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +137,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.13, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -153,16 +149,65 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.1208746, y: 0.6094288}
-      - {x: 0.77581644, y: 1.1022186}
-      - {x: 0.5002537, y: 1.2882192}
-      - {x: -0.5778291, y: 0.9337648}
-      - {x: -0.8607379, y: 0.58429295}
-      - {x: -0.7862352, y: -0.019612499}
-      - {x: -0.824957, y: -0.5300106}
-      - {x: -0.58778524, y: -0.80901706}
-      - {x: 0.15302205, y: -1.3626368}
-      - {x: 0.456491, y: -1.2464387}
-      - {x: 1.0313873, y: -0.74784446}
-      - {x: 1.282584, y: -0.17943466}
+    - - {x: -2.7062964, y: 0.9389667}
+      - {x: -8.428823, y: 0.28434175}
+      - {x: -10.180415, y: -0.62847954}
+      - {x: -3.9431622, y: -1.7916182}
+      - {x: 8.653618, y: -1.03033}
+      - {x: 8.000324, y: 0.20938748}
+  m_UseDelaunayMesh: 0
+--- !u!60 &4676229834321158446
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315302943264399104}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 20.528778, y: 0.9364573}
+      - {x: 20.428713, y: 0.9297321}
+      - {x: 11.977781, y: 0.4844289}
+      - {x: 8.080051, y: 0.12514545}
+      - {x: 8.831539, y: -0.99034834}
+      - {x: 18.615776, y: -1.7623016}
+      - {x: 23.80133, y: -1.3451405}
+      - {x: 27.407658, y: -0.28371888}
   m_UseDelaunayMesh: 0
