@@ -5979,10 +5979,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparks Particles
       objectReference: {fileID: 0}
-    - target: {fileID: 2902426376725130224, guid: cced674582a352b47a2d6c57f6e3c05d, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3640902450767968422, guid: cced674582a352b47a2d6c57f6e3c05d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -130.04
@@ -41409,6 +41405,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 259648678}
     m_Modifications:
+    - target: {fileID: 1407505165075629290, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2322958705525538838, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.07
