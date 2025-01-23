@@ -5692,6 +5692,7 @@ GameObject:
   - component: {fileID: 114132187}
   - component: {fileID: 114132189}
   - component: {fileID: 114132190}
+  - component: {fileID: 114132191}
   m_Layer: 0
   m_Name: wood 1_0 (1)
   m_TagString: Untagged
@@ -5842,6 +5843,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114132191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114132185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &121766347
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,6 +6258,7 @@ GameObject:
   - component: {fileID: 194795309}
   - component: {fileID: 194795311}
   - component: {fileID: 194795312}
+  - component: {fileID: 194795313}
   m_Layer: 0
   m_Name: wood 2_0 (3)
   m_TagString: Untagged
@@ -6394,6 +6409,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &194795313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194795307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &201093775
 GameObject:
   m_ObjectHideFlags: 0
@@ -7907,6 +7935,7 @@ GameObject:
   - component: {fileID: 266011781}
   - component: {fileID: 266011779}
   - component: {fileID: 266011782}
+  - component: {fileID: 266011783}
   m_Layer: 0
   m_Name: wood small_0 (5)
   m_TagString: Untagged
@@ -8057,6 +8086,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &266011783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266011777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &267386165
 GameObject:
   m_ObjectHideFlags: 0
@@ -8918,6 +8960,7 @@ GameObject:
   - component: {fileID: 328254916}
   - component: {fileID: 328254918}
   - component: {fileID: 328254919}
+  - component: {fileID: 328254920}
   m_Layer: 0
   m_Name: wood small_0 (4)
   m_TagString: Untagged
@@ -9068,6 +9111,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &328254920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328254915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &334176132
 GameObject:
   m_ObjectHideFlags: 0
@@ -17112,7 +17168,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485284235}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.73241687, w: 0.68085647}
   m_LocalPosition: {x: -22.677963, y: -3.0576668, z: 0.39224595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -17132,7 +17188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 2
-  m_LightType: 4
+  m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.41667643, g: 0.48084128, b: 0.57861626, a: 1}
@@ -17159,8 +17215,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
+  m_PointLightInnerRadius: 213.6957
+  m_PointLightOuterRadius: 232.70341
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -24825,6 +24881,7 @@ GameObject:
   - component: {fileID: 1060952477}
   - component: {fileID: 1060952479}
   - component: {fileID: 1060952480}
+  - component: {fileID: 1060952481}
   m_Layer: 0
   m_Name: wood small_0
   m_TagString: Untagged
@@ -24975,6 +25032,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1060952481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060952476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1079789102
 GameObject:
   m_ObjectHideFlags: 0
@@ -26597,6 +26667,7 @@ GameObject:
   - component: {fileID: 1246706889}
   - component: {fileID: 1246706891}
   - component: {fileID: 1246706892}
+  - component: {fileID: 1246706893}
   m_Layer: 0
   m_Name: wood 2_0 (2)
   m_TagString: Untagged
@@ -26747,6 +26818,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1246706893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246706887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1247247743
 GameObject:
   m_ObjectHideFlags: 0
@@ -28423,6 +28507,7 @@ GameObject:
   - component: {fileID: 1360110833}
   - component: {fileID: 1360110834}
   - component: {fileID: 1360110835}
+  - component: {fileID: 1360110836}
   m_Layer: 0
   m_Name: wood 1_0 (3)
   m_TagString: Untagged
@@ -28573,6 +28658,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1360110836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360110830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!4 &1367423474 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 941525470757954171, guid: 924d8b434749943f8b28b25098d149c8, type: 3}
@@ -28875,8 +28973,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 3.0000257}
-  m_SizeDelta: {x: 345.8057, y: 159.763}
+  m_AnchoredPosition: {x: -0.000020981, y: -14}
+  m_SizeDelta: {x: 209.2193, y: 148.8362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424422306
 MonoBehaviour:
@@ -28900,18 +28998,25 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: bea7617e50d0a00469df83664b9262d7, type: 3}
-    m_FontSize: 14
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 1
+    m_MaxSize: 111
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: '1- .......................
+
+    2- .......................
+
+    3- .......................
+
+    4-
+    .......................'
 --- !u!222 &1424422307
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29247,6 +29352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1433725448}
+  - component: {fileID: 1433725449}
   m_Layer: 0
   m_Name: holder
   m_TagString: Untagged
@@ -29270,6 +29376,28 @@ Transform:
   - {fileID: 2026065795}
   m_Father: {fileID: 1059585896}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1433725449
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433725447}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3931e8793b57b0848849d204022c9c41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1440006530
 GameObject:
   m_ObjectHideFlags: 0
@@ -29444,6 +29572,7 @@ GameObject:
   - component: {fileID: 1448304403}
   - component: {fileID: 1448304404}
   - component: {fileID: 1448304405}
+  - component: {fileID: 1448304406}
   m_Layer: 0
   m_Name: wood small_0 (6)
   m_TagString: Untagged
@@ -29594,6 +29723,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1448304406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448304400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1454043336
 GameObject:
   m_ObjectHideFlags: 0
@@ -31319,6 +31461,7 @@ GameObject:
   - component: {fileID: 1600407186}
   - component: {fileID: 1600407188}
   - component: {fileID: 1600407189}
+  - component: {fileID: 1600407190}
   m_Layer: 0
   m_Name: wood 2_0
   m_TagString: Untagged
@@ -31469,6 +31612,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1600407190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600407184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1603595571
 GameObject:
   m_ObjectHideFlags: 0
@@ -33099,6 +33255,7 @@ GameObject:
   - component: {fileID: 1731880414}
   - component: {fileID: 1731880416}
   - component: {fileID: 1731880417}
+  - component: {fileID: 1731880418}
   m_Layer: 0
   m_Name: wood small_0 (3)
   m_TagString: Untagged
@@ -33249,6 +33406,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1731880418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731880413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1732264205
 GameObject:
   m_ObjectHideFlags: 0
@@ -34050,6 +34220,7 @@ GameObject:
   - component: {fileID: 1780566310}
   - component: {fileID: 1780566311}
   - component: {fileID: 1780566312}
+  - component: {fileID: 1780566313}
   m_Layer: 0
   m_Name: wood 1_0 (2)
   m_TagString: Untagged
@@ -34200,6 +34371,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1780566313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780566307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1796113222
 GameObject:
   m_ObjectHideFlags: 0
@@ -34265,6 +34449,7 @@ GameObject:
   - component: {fileID: 1796554984}
   - component: {fileID: 1796554987}
   - component: {fileID: 1796554988}
+  - component: {fileID: 1796554989}
   m_Layer: 0
   m_Name: wood small_0 (1)
   m_TagString: Untagged
@@ -34415,6 +34600,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1796554989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796554983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1802638521
 GameObject:
   m_ObjectHideFlags: 0
@@ -35379,6 +35577,7 @@ GameObject:
   - component: {fileID: 1862381094}
   - component: {fileID: 1862381096}
   - component: {fileID: 1862381097}
+  - component: {fileID: 1862381098}
   m_Layer: 0
   m_Name: wood 1_0
   m_TagString: Untagged
@@ -35529,6 +35728,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1862381098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862381092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 944451188}
 --- !u!1 &1876845552
 GameObject:
   m_ObjectHideFlags: 0
@@ -42897,6 +43109,7 @@ GameObject:
   - component: {fileID: 2026065799}
   - component: {fileID: 2026065801}
   - component: {fileID: 2026065800}
+  - component: {fileID: 2026065802}
   m_Layer: 0
   m_Name: curtins Acssories_0 (3)
   m_TagString: Untagged
@@ -42913,7 +43126,7 @@ Transform:
   m_GameObject: {fileID: 2026065794}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19927464, y: -10.361643, z: 0}
+  m_LocalPosition: {x: 0.19927464, y: -10.36164, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -43371,6 +43584,19 @@ MonoBehaviour:
   forceLength: 0.03
   useScaleToFlip: 0
   scaleObject: {fileID: 0}
+--- !u!114 &2026065802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026065794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c94ce34f604043a9fc37bf9361b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtinsHolderAnimator: {fileID: 1433725449}
 --- !u!1 &2045843039
 GameObject:
   m_ObjectHideFlags: 0
