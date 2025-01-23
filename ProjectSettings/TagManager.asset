@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ball
   - Spring
+  - Audio
+  - Light
   layers:
   - Default
   - TransparentFX

@@ -5502,7 +5502,7 @@ GameObject:
   - component: {fileID: 107978077}
   m_Layer: 0
   m_Name: Light 2D (2)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5748,7 +5748,7 @@ GameObject:
   - component: {fileID: 121766349}
   m_Layer: 0
   m_Name: Light 2D (3)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8472,7 +8472,7 @@ GameObject:
   - component: {fileID: 299608226}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15203,7 +15203,7 @@ GameObject:
   - component: {fileID: 415705533}
   m_Layer: 0
   m_Name: Light 2D (2)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16327,7 +16327,7 @@ GameObject:
   - component: {fileID: 485284237}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19936,7 +19936,7 @@ GameObject:
   - component: {fileID: 826666623}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20832,7 +20832,7 @@ GameObject:
   - component: {fileID: 896644151}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20928,6 +20928,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.40057427
       objectReference: {fileID: 0}
+    - target: {fileID: 1889021430511624225, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
+      objectReference: {fileID: 0}
     - target: {fileID: 2322958705525538838, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.36
@@ -20968,9 +20972,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -32.875
       objectReference: {fileID: 0}
+    - target: {fileID: 2379867544667804287, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2512159618555173354, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_FalloffIntensity
       value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520845739695768064, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095203665049276230, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4401757297804852647, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_FalloffIntensity
@@ -20979,6 +20995,10 @@ PrefabInstance:
     - target: {fileID: 4401757297804852647, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_PointLightOuterRadius
       value: 9.866973
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713166205582923928, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
       objectReference: {fileID: 0}
     - target: {fileID: 5726864251343382589, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20999,6 +21019,14 @@ PrefabInstance:
     - target: {fileID: 7032175646710502789, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_PointLightOuterRadius
       value: 9.923128
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927182374640642101, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142963818742180937, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22787,7 +22815,7 @@ GameObject:
   - component: {fileID: 1059772937}
   m_Layer: 0
   m_Name: Light 2D (4)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23606,7 +23634,7 @@ GameObject:
   - component: {fileID: 1144902159}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23690,7 +23718,7 @@ GameObject:
   - component: {fileID: 1151182663}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24612,7 +24640,7 @@ GameObject:
   - component: {fileID: 1223524997}
   m_Layer: 0
   m_Name: Light 2D (4)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25072,7 +25100,7 @@ GameObject:
   - component: {fileID: 1273276608}
   m_Layer: 0
   m_Name: Light 2D (6)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27744,7 +27772,7 @@ GameObject:
   - component: {fileID: 1454043338}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29614,7 +29642,7 @@ GameObject:
   - component: {fileID: 1642315376}
   m_Layer: 0
   m_Name: Light 2D (5)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31053,7 +31081,7 @@ GameObject:
   - component: {fileID: 1770695628}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31548,7 +31576,7 @@ GameObject:
   - component: {fileID: 1808818210}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38482,7 +38510,7 @@ GameObject:
   - component: {fileID: 1946115751}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38896,7 +38924,7 @@ GameObject:
   - component: {fileID: 1988677262}
   m_Layer: 0
   m_Name: Light 2D (3)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39250,7 +39278,7 @@ GameObject:
   - component: {fileID: 2012128983}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39927,7 +39955,7 @@ GameObject:
   - component: {fileID: 2057914416}
   m_Layer: 0
   m_Name: Light 2D (5)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40610,7 +40638,7 @@ GameObject:
   - component: {fileID: 2119875324}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40883,7 +40911,7 @@ GameObject:
   - component: {fileID: 9042670190934784443}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41282,6 +41310,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: d8e694a602c6a4545bc88def76fb6767, type: 2}
+    - target: {fileID: 1889021430511624225, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
+      objectReference: {fileID: 0}
     - target: {fileID: 2322958705525538838, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.697591
@@ -41322,9 +41354,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -32.875
       objectReference: {fileID: 0}
+    - target: {fileID: 2379867544667804287, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2520845739695768064, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 4095203665049276230, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713166205582923928, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
+      objectReference: {fileID: 0}
     - target: {fileID: 6665923947520198789, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
       propertyPath: m_Name
       value: Fan
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927182374640642101, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 9142963818742180937, guid: d403fde0278065f4386419e6ddf2db33, type: 3}
+      propertyPath: m_TagString
+      value: Light
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41846,7 +41902,7 @@ GameObject:
   - component: {fileID: 1847399573459610454}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42003,7 +42059,7 @@ GameObject:
   - component: {fileID: 4482683626415502804}
   m_Layer: 0
   m_Name: Light 2D
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42053,7 +42109,7 @@ GameObject:
   - component: {fileID: 2449786871595618713}
   m_Layer: 0
   m_Name: Light 2D (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
