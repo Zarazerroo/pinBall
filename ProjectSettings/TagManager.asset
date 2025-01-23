@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Spring
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -75,6 +76,9 @@ TagManager:
     locked: 0
   - name: 5
     uniqueID: 1973381037
+    locked: 0
+  - name: 6
+    uniqueID: 2351624927
     locked: 0
   m_RenderingLayers:
   - Default
