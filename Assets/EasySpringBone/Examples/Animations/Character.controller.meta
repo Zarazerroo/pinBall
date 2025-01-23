@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a0d3f5837c4bcdf4fa33e4e3c98aaacb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177872
+  packageName: Easy SpringBone
+  packageVersion: 1.2.1
+  assetPath: Assets/EasySpringBone/Examples/Animations/Character.controller
+  uploadId: 515042

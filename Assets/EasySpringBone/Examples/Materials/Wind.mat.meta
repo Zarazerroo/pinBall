@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7737906a2580324ba31c7d66080df3a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177872
+  packageName: Easy SpringBone
+  packageVersion: 1.2.1
+  assetPath: Assets/EasySpringBone/Examples/Materials/Wind.mat
+  uploadId: 515042

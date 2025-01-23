@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fcb9a832e6030194aacd55c401fa8718
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 177872
+  packageName: Easy SpringBone
+  packageVersion: 1.2.1
+  assetPath: Assets/EasySpringBone/Examples/Scripts/DemoScriptControl.cs
+  uploadId: 515042
