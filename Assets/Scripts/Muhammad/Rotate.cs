@@ -9,15 +9,20 @@ public class Rotate : MonoBehaviour
 	public float speed = 10f;
 
 	Rigidbody2D rb;
+	[SerializeField]
+	public ParticleSystem ShreddingParticle;
+	 ParticleSystem ShreddingParticleInstance;
 
 	private void Awake()
-   {
-      audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-   }
+	{
+		audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+	}
 
-   private void OnCollisionEnter2D(Collision2D collision)
-    {
+	private void OnCollisionEnter2D(Collision2D collision)
+	 {
 		audioManager.PlaySFX(audioManager.RotateSfx);
+
+		ShreddingParticleInstance = Instantiate(ShreddingParticle, transform.position, Quaternion.identity);
 	}
 	void Start()
 	{
