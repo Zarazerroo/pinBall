@@ -7,7 +7,7 @@ TagManager:
   - Ball
   - Spring
   - Audio
-  - Rebon
+  - Light
   layers:
   - Default
   - TransparentFX

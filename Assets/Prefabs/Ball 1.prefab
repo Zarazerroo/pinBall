@@ -193,8 +193,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.1
-  m_LinearDamping: 0
-  m_AngularDamping: 0
+  m_LinearDamping: 0.15
+  m_AngularDamping: 0.1
   m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 79f1016d9fbc41e45bd4cf2297bafd61, type: 2}
   m_IncludeLayers:
@@ -206,7 +206,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1210504606789674414
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7660893565775214311}
-  maxVelocity: 50
+  maxVelocity: 69
 --- !u!114 &2202518535401254361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628547fe51aa3440b8a6af53e87dff2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kickStrength: 5
+  kickStrength: 25
 --- !u!61 &2148755932598498695
 BoxCollider2D:
   m_ObjectHideFlags: 0
