@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: ed308f8888a1f924eaa7f2fdb90d8c8d
   - enabled: 1
-    path: Assets/Scenes/Muhammad/Full game M.unity
-    guid: 8eb7f9cfc5d533745adf3cb03b3d457c
+    path: Assets/Scenes/Aziz/Submit Plz.unity
+    guid: 0e0893eda56c641668046027a956d064
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
